@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.parsehub.com/blog/introducing-a-new-version-of-parsehub/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 Mar 2019 02:20:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Introducing a New Version of ParseHub</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen164c.css?v=7e189249f9" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min164c.css?v=7e189249f9" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/custom164c.css?v=7e189249f9" />
+
+     <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-44399807-1', 'auto');
+        ga('send', 'pageview');
+      </script>
+
+      <script src="http://load.sumome.com/" data-sumo-site-id="186811ae19df34811e8922e29bfc8c50f6aea07dbdad726b1233786bf819d46e" async="async"></script>
+
+    <link rel="canonical" href="index.html" />
+    <meta name="referrer" content="origin" />
+    
+    <meta property="og:site_name" content="ParseHub" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Introducing a New Version of ParseHub" />
+    <meta property="og:description" content="Today, the team behind ParseHub is excited to announce a lot of great changes and enhancements to the ParseHub desktop app and overall web scraping service. Our goal is to be the most powerful, flexible and easy-to-use data collection app on market. With every improvement,we step closer to that" />
+    <meta property="og:url" content="https://www.parsehub.com/blog/introducing-a-new-version-of-parsehub/" />
+    <meta property="article:published_time" content="2016-05-15T12:00:00.000Z" />
+    <meta property="article:modified_time" content="2017-08-29T06:08:34.874Z" />
+    <meta property="article:tag" content="ParseHub" />
+    <meta property="article:tag" content="Web Scraping" />
+    <meta property="article:tag" content="Product Updates" />
+    <meta property="article:tag" content="Kimono Labs" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Introducing a New Version of ParseHub" />
+    <meta name="twitter:description" content="Today, the team behind ParseHub is excited to announce a lot of great changes and enhancements to the ParseHub desktop app and overall web scraping service. Our goal is to be the most powerful, flexible and easy-to-use data collection app on market. With every improvement,we step closer to that" />
+    <meta name="twitter:url" content="https://www.parsehub.com/blog/introducing-a-new-version-of-parsehub/" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Angelina Fomina" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="ParseHub, Web Scraping, Product Updates, Kimono Labs" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "ParseHub",
+        "logo": "https://www.parsehub.com/blog/ghost/img/ghosticon.jpg"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Angelina Fomina",
+        "image": "https://www.parsehub.com/blog/content/images/2016/06/angie.jpg",
+        "url": "https://www.parsehub.com/blog/author/angelina/",
+        "sameAs": [],
+        "description": "Angelina is a co-founder of ParseHub - making online data accessible to all through a super nifty, powerful scraping tool. She creates ink illustrations, hikes and rock climbs in here spare time."
+    },
+    "headline": "Introducing a New Version of ParseHub",
+    "url": "https://www.parsehub.com/blog/introducing-a-new-version-of-parsehub/",
+    "datePublished": "2016-05-15T12:00:00.000Z",
+    "dateModified": "2017-08-29T06:08:34.874Z",
+    "keywords": "ParseHub, Web Scraping, Product Updates, Kimono Labs",
+    "description": "Today, the team behind ParseHub is excited to announce a lot of great changes and enhancements to the ParseHub desktop app and overall web scraping service. Our goal is to be the most powerful, flexible and easy-to-use data collection app on market. With every improvement,we step closer to that"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.8" />
+    <link rel="alternate" type="application/rss+xml" title="ParseHub" href="../rss/index.html" />
+</head>
+<body class="post-template tag-parsehub tag-web-scraping tag-product-updates tag-kimono-labs">
+
+    <nav class="navbar navbar-default" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse"
+        data-target="#example-navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <span>
+      <a rel="home" href="../../index.html"
+        title="ParseHub - scrape data from interactive websites">
+        <img src="../../static/images/parsehub_logo2.svg"
+            height="33px"
+            style="margin-top:17px"/>
+      </a>
+    </span>
+  </div>
+  <div class="collapse navbar-collapse" id="example-navbar-collapse">
+    <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav">
+        <li><a href="../index.html">Blog</a></li>
+        <li class="blog_header_accent"><a href="../tag/how-to-guides/index.html">Guides</a></li>
+        <li><a href="../tag/data-fun/index.html">Data Fun</a></li>
+        <li><a href="../tag/business-hacks/index.html">Business Hacks</a></li>
+        <li><a href="../tag/how-to-guides/index.html">Developers</a></li>
+        <li><a href="../tag/start-up-journey/index.html">Start-up Journey</a></li>
+        <li><a href="../tag/product-updates/index.html">Product Updates</a></li>
+      </ul>
+    </ul>
+  </div>
+</nav>
+    <div class="site-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            
+
+
+<main class="content" role="main">
+    <article class="post tag-parsehub tag-web-scraping tag-product-updates tag-kimono-labs">
+
+        <header class="post-header">
+            <h1 class="post-title">Introducing a New Version of ParseHub</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2016-05-15">15 May 2016</time>  on <a href="../tag/parsehub/index.html">ParseHub</a>, <a href="../tag/web-scraping/index.html">Web Scraping</a>, <a href="../tag/product-updates/index.html">Product Updates</a>, <a href="../tag/kimono-labs/index.html">Kimono Labs</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>Today, the team behind <a href="../../index.html">ParseHub</a> is excited to announce a lot of great changes and enhancements to the ParseHub desktop app and overall web scraping service. Our goal is to be the most powerful, flexible and easy-to-use data collection app on market. With every improvement,we step closer to that goal.</p>
+
+<p>Over the past two years, ParseHub grew from a buggy beta product to a mature one that anyone with basic Excel knowledge or business analytics skills can use. We've spent many hours testing live with our users in Toronto. Our users worldwide have spent even more time learning ParseHub and providing us with valuable feedback. We want to thank all of them for sticking with us through the growing pains.</p>
+
+<p>The new version of ParseHub will get you any data from the web without the headache of writing code or copying and pasting. This version is much faster and easier to use!</p>
+
+<p>Keep reading for all of the product changes (there are quite a few) or watch this 2 minute <a href="https://help.parsehub.com/hc/en-us/articles/219471727-New-Version-Product-Changes">video here</a>.</p>
+
+<p><a href="../../contact.html">Contact</a> us if you have any questions or feedback. You can get in touch with the founders directly.
+We can do office demos for your entire team to help you fully understand all of the product changes.</p>
+
+<h2 id="whatyoucanexpect">What you can expect</h2>
+
+<ul>
+<li>New Desktop App interface</li>
+<li>Significantly easier and faster way to extract data from web pages</li>
+<li><strong>Improved automation</strong>: ParseHub now automates a lot of the tasks that you had to do manually in the
+old version. For example, the list command (now the Begin New Entry command) <br />
+is created for you and the text <br />
+and url for each selection is automatically extracted for you.  </li>
+<li><strong>A new way to access the tools</strong>: instead of taking up space, the tools can now be accessed through the</li>
+<li>button on each individual command.</li>
+<li><strong>New help center</strong>: a comprehensive guide with 60 + new, searchable tutorials.</li>
+<li><strong>New 0-hassle maintenance plan</strong>: our engineers build your projects and fix them within 24 hours if there are any issues. Contact us for more details on this plan.</li>
+<li><strong>Unlimited training for your team</strong> to help you get used to all of the ParseHub changes.</li>
+</ul>
+
+<p><strong><h4 style="color: #e75937">Watch the video below to get an overview of the changes:</h4></strong></p>
+
+<iframe width="854" height="480" src="https://www.youtube.com/embed/ECdAir7Mxy4" frameborder="0" allowfullscreen></iframe>
+
+<h2 id="changesinthenewversion">Changes in the new version</h2>
+
+<h3 id="interfacechanges">Interface changes</h3>
+
+<ol>
+<li>App sidebar is now on the left side.  </li>
+<li>Enter URL to scrape before starting project.  </li>
+<li>The tools are now accessed in context. Click the plus button on <br />
+any command to create a new sub-command underneath it. (Hold shift to activate all plus buttons.)  </li>
+<li>Easily switch between templates by clicking on the template name.  </li>
+<li>The List tool has been renamed to Begin New Entry to clarify its role. Its behavior remains the same.  </li>
+<li>Use the new toggle button to change between browse and select mode.</li>
+</ol>
+
+<h3 id="tasksautomated">Tasks automated</h3>
+
+<ol>
+<li>No more SHIFT key. Just select similar elements on the page.  </li>
+<li>After you make a selection on the page, the text and url data for that selection is automatically extracted for you.  </li>
+<li>After you select multiple elements, the Begin New Entry (List) command is created for you.  </li>
+<li>When selecting a text box, the Input command is created for you.  </li>
+<li>Wait command is automatically added when you use the click tool.  </li>
+<li>Get data behind a log in with only 3 simple steps.  </li>
+<li>Easier way to get data from infinitely scrolling pages.</li>
+</ol>
+
+<h3 id="paginationnavigationswitchingtemplates">Pagination, navigation &amp; switching templates</h3>
+
+<ol>
+<li>No more Navigate tool. Use the click tool for pagination (to scrape multiple pages).  </li>
+<li>Navigate through a website and open new pages with Click tool.  </li>
+<li>Go to any new url with the Go to Template tool.</li>
+</ol>
+
+<p><strong><h5 style="color: #e75937">Keep reading for a deeper explanation of each change...</h5></strong></p>
+
+<h2 id="interfacechanges">Interface changes</h2>
+
+<h3 id="1appsidebarisnowontheleftside">1. App sidebar is now on the left side</h3>
+
+<p>The app sidebar is where you will create instructions for ParseHub by using tools to create commands. To build out your project, interact with the left side of the desktop app and the main window where you website is open.</p>
+
+<div class="container" style="width: 100%;text-align:center">  
+ <div class="theme-table-image col-sm-6">
+   <p><i>Old Version</i></p>
+   <img src="../content/images/2016/06/app_side_bar_v1.png" width="325">
+ </div>
+ <div class="theme-table-image col-sm-6">
+   <p><i>New Version</i></p>
+   <img src="../content/images/2016/06/app_side_bar_v2.png" width="325">
+ </div>
+</div>
+
+<h3 id="2enterurlinsideappbeforestartingproject">2. Enter URL inside app before starting project</h3>
+
+<p>After opening the desktop app and clicking "Start New Project" you can type in the website that you want to scrape directly into the text box. ParseHub will start your project and the first template on this url. In the old version, you had to enter the url into the browser.</p>
+
+<p><img alt="enter url directly into app for web scraping" src="../content/images/2016/06/enter_url_directly_into_app_parsehub.png" width="400"></p>
+
+<h3 id="3thetoolsarenowaccessedthroughcommands">3. The tools are now accessed through commands.</h3>
+
+<p>Click the plus button on any command to create a new sub-command underneath it. (Hold shift to activate all plus buttons.)</p>
+
+<p>In the older version the tool menu was visible on the right hand side. To save space and to make it more intuitive for you to learn the ParseHub commands hierarchy, you can now access the tool menu by clicking on the plus button of each command.</p>
+
+<p><em><strong>New Version Steps:</strong></em></p>
+
+<p><strong>If you are making your first selection on a new template:</strong></p>
+
+<ol>
+<li>Click on the blue plus button next to the "Select page" command.  </li>
+<li>Choose the select tool from the tool menu.  </li>
+<li>Click on any element on the page.  </li>
+<li>The data is now selected for you and both the url and the text <br />
+for that piece of data is extracted for you.</li>
+</ol>
+
+<p>If you want to make another selection on the same page just click on the plus button next to the "Select page" command and make another selection.</p>
+
+<p><i>Sidebar when you choose the select tool from tool menu:</i></p>  
+
+<p><img alt="enter url directly into app for web scraping" src="../content/images/2016/06/accessing_new_toolbox_parsehub.png" width="400"></p>
+
+<p><i>Sidebar after you select your element with select tool:</i></p>  
+
+<p><img alt="enter url directly into app for web scraping" src="../content/images/2016/06/accessing_toolbox_parsehub-1.png" width="400"></p>
+
+<p><strong>If you are selecting similar elements to relate to your first selection:</strong></p>
+
+<p>Let's say you want to select all of the portfolios on a website, and also the author for each portfolio.</p>
+
+<ol>
+<li>Click on the plus button next to the "Select page" command.  </li>
+<li>From the tool menu choose the Select tool.  </li>
+<li>Click on the first element on the page.  </li>
+<li>Select the second element on the page.  </li>
+<li>All of the elements are now selected for you. The Begin New Entry command is automatically created for you and two more commands that extract the text and the url of the elements are created.  </li>
+<li>Click on the plus button next to the "Begin new entry in selection 1" command.  </li>
+<li>From the tool menu choose the Relative select tool.  </li>
+<li>Click on the element previously selected.  </li>
+<li>Click on the new element that you want to select and associate with the previously selected elements. An arrow will appear to make the association.  </li>
+<li>Both the url and the text of the newly selected elements will also be extracted and appear in your results.</li>
+</ol>
+
+<p><i>When finished your sidebar will look like this:</i></p>  
+
+<p><img alt="relative select parsehub sidebar" src="../content/images/2016/06/relative_select_parsehub_sidebar.png" width="400"></p>
+
+<p><i>Your sample results should look similar to this:</i></p>  
+
+<p><img alt="relative select parsehub sample results" src="../content/images/2016/06/relative_select_parsehub_sampleresults.png" width="400"></p>
+
+<h3 id="4easilyswitchbetweentemplatesbyclickingonthetemplatename">4. Easily switch between templates by clicking on the template name</h3>
+
+<p>In the old version you had to click on the dropdown of the template and select “Show Template”. Now, to easily switch between template you just have to double click on the template name.</p>
+
+<p><img alt="switch between templates in ParseHub" src="../content/images/2016/06/change_templates.gif" width="500"></p>
+
+<h3 id="5thelisttoolhasbeenrenamedtobeginnewentry">5. The List tool has been renamed to Begin New Entry</h3>
+
+<p>The Begin New Entry tool and command creates empty rows in Excel and empty JSON Objects for each selection. The Begin New Entry tool should be used if you want to create new buckets of space for your selections to go into. This command is usually created automatically for you.</p>
+
+<p><img alt="begin new entry command in parsehub to scrape multiple elements" src="../content/images/2016/06/begin_new_entry_command_parsehub.png" width="500"></p>
+
+<h3 id="6changebetweenbrowseandselectmodewithnewtogglebutton">6. Change between browse and select mode with new toggle button.</h3>
+
+<p>In the past version, to browse your website without the interruption of ParseHub you had to use a tool from the tool menu. Now, if you want to do the same you need to toggle the browse &amp; select button.</p>
+
+<p>When the button is green and reads “select” you can go ahead and use ParseHub tools on the website.</p>
+
+<p>When the button is white and grey and reads “browse” you can navigate and explore the website without ParseHub interfering.</p>
+
+<p><i>Select mode - use ParseHub on website</i></p>
+
+<p><img alt="toggle between select and browse mode" src="../content/images/2016/06/select_mode_parsehub.png" width="400"></p>
+
+<p><i>Browse mode - explore website without ParseHub</i></p>
+
+<p><img alt="toggle between select and browse mode" src="../../../blog/content/images/2016/06/browse_mode_parsehub.png" width="400"></p>
+
+<h2 id="tasksautomatedinnewversion">Tasks automated in new version</h2>
+
+<h3 id="1nomoreshiftkeyjustkeepclickingtoselectsimilarelements">1. No more SHIFT key. Just keep clicking to select similar elements.</h3>
+
+<p>ParseHub automatically predicts similar elements on the page when you click on more than one element. You don't have to hold down the SHIFT key to select multiple elements on the page - just keep clicking.</p>
+
+<p><em><strong>New Version Steps:</strong></em></p>
+
+<ol>
+<li>Select element on the page. To do this make sure to <br />
+choose the select tool from the tool menu by clicking on the plus button of any command. If you are starting a new project or template you can start from the "Select page" command. If you are building on an existing project, choose the appropriate command to make the selection under.  </li>
+<li>Select second similar element on the page  </li>
+<li>The Begin New Entry command will be automatically created for you to group all of the selections and to create new rows in Excel or new objects in JSON for each selection to go into.  </li>
+<li>Two extract commands will be created for you as well to extract the text and url.</li>
+</ol>
+
+<p><img alt="select multiple elements to scrape with ParseHub" src="../content/images/2016/06/select_multiple_element.gif" width="400"></p>
+
+<h3 id="2textandurldataisautomaticallyextractedforeveryselection">2. Text and url data is automatically extracted for every selection.</h3>
+
+<p>One command called the "Select &amp; Extract" command is created for you when you make a selection of any element on the page. Two new columns in Excel will be created for you for the text and url data. Two new fields populated with the url and text data will be created in JSON as well.</p>
+
+<p><em><strong>New Version Steps:</strong></em></p>
+
+<ol>
+<li>Select element on the page. The text and the url are now extracted for you and appear in the sample results.</li>
+</ol>
+
+<p><i>The left side bar should look like this:</i></p>
+
+<p><img alt="scrape text and url data" src="../content/images/2016/06/selection_sidebar.png" width="400"></p>
+
+<p><i>The sample results should look similar to this:</i></p>
+
+<p><img alt="scrape text and url data" src="../content/images/2016/06/selection_sampleresults.png" width="400"></p>
+
+<h3 id="3afterselectingmultipleelementsthebeginnewentrylistcommandiscreatedforyou">3. After selecting multiple elements, the Begin New Entry (List) command is created for you.</h3>
+
+<p>The list command and tool has been renamed to "Begin new entry". When you select multiple elements on the page, this command is automatically created for you. Both the text and the url of all of the selections will be extracted for you.</p>
+
+<p><em><strong>New Version Steps:</strong></em></p>
+
+<ol>
+<li>Select element on the page.  </li>
+<li>Select another similar element on the page.  </li>
+<li>The list command - now called the “Begin new entry”  automatically created for you. The text and url of the selection are now extracted for you and should appear in the sample results.</li>
+</ol>
+
+<p><i>The left side bar should look like this:</i></p>
+
+<p><img alt="scrape multiple data points from website" src="../content/images/2016/06/begin_new_entry_command_sidebar.png" width="400"></p>
+
+<p><i>The sample results should look similar to this:</i></p>
+
+<p><img alt="scrape multiple data points from website" src="../content/images/2016/06/begin_new_entry_command_sampleresults.png" width="400"></p>
+
+<h3 id="4whenselectingatextboxtheinputcommandiscreatedforyou">4. When selecting a text box, the Input command is created for you.</h3>
+
+<p>Select any input or text box with the Select tool. ParseHub will recognize if the element select is an input and will create the input command for you right away. All you have to do is type in the input text/value.</p>
+
+<p><em><strong>New Version Steps:</strong></em></p>
+
+<ol>
+<li>Select the input or text box on the page. ParseHub automatically detects the input box and creates an input command for you.  </li>
+<li>Start typing in the text that you want to appear in the input box right away, and it will appear both in the sidebar and on the website.</li>
+</ol>
+
+<p><img alt="using input box to scrape through different keywords with parsehub" src="../content/images/2016/06/using_input_box_parsehub.png" width="400"></p>
+
+<h3 id="5waitcommandisautomaticallyaddedwhenyouusetheclicktool">5. Wait command is automatically added when you use the click tool</h3>
+
+<p>Prior to the new version, you had to manually use the Wait tool and set a wait time when ParseHub clicks on elements or when ParseHub navigates through pages. You can still do this in the new version, but we made it much easier for you by adding a wait time automatically to all click and navigate commands.</p>
+
+<p>You can change the time ParseHub waits (in seconds) after clicking two ways. You can change it in the pop-up right after choosing the Click tool from the tool menu. Or you can change it later in the options of the click command.</p>
+
+<p><i>Change click wait time in pop-up:</i></p>
+
+<p><img alt="increase wait time within parsehub app" src="../content/images/2016/06/click_wait_time_pop_up.png" width="400"></p>
+
+<p><i>Change click wait time in the command options:</i></p>
+
+<p><img alt="increase wait time within parsehub app" src="../content/images/2016/06/click_wait_time_sidebar.png" width="400"></p>
+
+<h3 id="6getdatabehindaloginformfaster">6. Get data behind a log-in form faster</h3>
+
+<p>It is much easier to log into a website with the new version of ParseHub. Many steps are automated for you. ParseHub detects when you select an input or text box for the username/email and the password.</p>
+
+<p><em><strong>New Version Steps:</strong></em></p>
+
+<ol>
+<li>Click on the "Select page" command plus button.  </li>
+<li>From the tool menu choose the Select tool.  </li>
+<li>Click on the username or email field.  </li>
+<li>The input command is automatically created for you in the side bar.  </li>
+<li>Type in the email right into the input command. It should appear on the log in page.  </li>
+<li>Click on the "Select page" command plus button.  </li>
+<li>From the tool menu choose the Select tool.  </li>
+<li>Click on the password field.  </li>
+<li>The input command is automatically created for you in the side bar.  </li>
+<li>Type in the password right into the input command. Note that it will be visible in the app interface.  </li>
+<li>Click on the "Select page" command plus button.  </li>
+<li>From the tool menu choose the Select tool.  </li>
+<li>Click on the "Log In" button.  </li>
+<li>Click on the "selection3" plus button command or whatever the selection is that targets the log in button.  </li>
+<li>From the tool menu choose the "Advanced" toggle to display all of the tools. Choose the Click tool.  </li>
+<li>Choose the "Create new template" option. Type in the name of the new template, such as "post log-in" and click "Create new template".</li>
+</ol>
+
+<p><i>Side bar view of example log-in steps:</i></p>
+
+<p><img alt="log in to get data from a website" src="../content/images/2016/06/login_parsehub_sidebar.png" width="400"></p>
+
+<p><i>Pop-up to click on the "log-in" button:</i></p>
+
+<p><img alt="use the log in button to get data from website" src="../content/images/2016/06/click_login_button_parsehub.png" width="400"></p>
+
+<h3 id="7newwaytogetdatafromscrollingpages">7. New way to get data from scrolling pages</h3>
+
+<p>In the old version you had to use the Loop tool to create a for loop and write code. In the new <br />
+version, this is done for you. All you have to do is select which part of the page you want to <br />
+scroll and use the Scroll tool to indicate the number of times you want ParseHub to scroll down <br />
+the page.</p>
+
+<p><em><strong>New Version Steps:</strong></em></p>
+
+<ol>
+<li>Click on the "Select page" command plus button.  </li>
+<li>From the tool menu, choose the "Select" tool.  </li>
+<li>Select the container that holds all of the content that you want to scroll. To do this you need <br />
+to refine what is highlighted on the page.  </li>
+<li>Hold down the CTRL key (or the CMD key on a Mac) and press the number 1 on your keyboard. You will see the highlighted selection expand on the page. When you see a highlight around the entire container that holds all of your content, click on the highlight to make a selection.  </li>
+<li>The Select &amp; Extract selection1 command should appear for you in the left side bar.  </li>
+<li>Click on the + button next to the selection1 command that selects the entire container. Click on the "Advanced" section to expand the tool menu. Choose the Scroll tool from the tool menu.  </li>
+<li>Click on the "align to bottom"' checkbox in the scroll command options.  </li>
+<li>Tell ParseHub how many times you want to scroll down the page by replacing the "Repeat 1 times" text.</li>
+</ol>
+
+<p><img alt="infinte scroll for web scraping" src="../content/images/2016/06/infinite_scroll_parsehub.png" width="400"></p>
+
+<h2 id="paginationnavigationswitchingtemplates">Pagination, navigation &amp; switching templates</h2>
+
+<h3 id="1nomorenavigatetoolusetheclicktoolforpaginationtoscrapemultiplepages">1. No more Navigate tool. Use the click tool for pagination (to scrape multiple pages).</h3>
+
+<p>Navigate used to be a very widely used tools in the old version of ParseHub. In the new version, the click and navigate tools were combined to just be the click tool. If you want to navigate to a new page or to open a new page you should use the click tool. This tool should be used if you have a "next page" button.</p>
+
+<p><em><strong>New Version Steps:</strong></em></p>
+
+<ol>
+<li>Click on the plus button in the "Select page" command. From the tool menu select the Select tool.  </li>
+<li>Find the "Next Page" button on the website and click on it. A new "Select and Extract" command is created for you.  </li>
+<li>Click on the plus button in the "Select Extract" command and choose the Click tool.  </li>
+<li>ParseHub will automatically detect that the click does not take you to a new type of page. You will be asked to stay on the same template. Choose to stay on the same template.</li>
+</ol>
+
+<p><img alt="use the click tool to open a new page" src="../content/images/2016/06/using_the_click_tool.png" width="400"></p>
+
+<h3 id="2navigatethroughwebsiteandopennewpageswithclicktool">2. Navigate through website and open new pages with Click tool.</h3>
+
+<p>The click tool should also be used if you want to open new pages behind links. For example, if you want to select all of the categories and open the categories urls to scrape more information. You should also use click if you have a list of products or businesses and if you want to open the details/profile pages behind each. You only need to use the click tool one time and it will be applied to all of the selections you previously made.</p>
+
+<p>Follow the examples below to open a new page for multiple links that you select.</p>
+
+<ol>
+<li>Click on the plus button in the "Select page" command. From the tool menu select the Select tool.  </li>
+<li>Click on the first element on the page (such as one of the products).  </li>
+<li>Click on the second element on the page (another product).  </li>
+<li>The Begin new entry command and two Extract commands that extract the url and text of your selection will be extracted for you.  </li>
+<li>Click on the plus button in the "Begin new entry in selection1" command. From the tool menu select the Click tool.  </li>
+<li>In the pop-up select "Create new template" and enter the template in the text box, followed by clicking the "Create new template" button.  </li>
+<li>A new template will be created for you and the new page will be opened for you.</li>
+</ol>
+
+<p><i>Pop-up to open new page on click:</i></p>  
+
+<p><img alt="open new template to web scrape with parsehub" src="../content/images/2016/06/open_new_template_click_parsehub.png" width="400"></p>
+
+<h3 id="3gotoanynewurlwiththegototemplatetool">3. Go to any new url with the Go to Template tool</h3>
+
+<ol>
+<li>Click on the plus button in the "Select page" command or any other command from which you want to use the Go To Template tool.  </li>
+<li>From the tool menu select the Go To Template tool.  </li>
+<li>In the pop-up check mark "Go to URL" and add the url you want to go to within single quotation marks. For example - '<a href="https://inbound.org/">https://inbound.org</a>'. You can also add a query to the end of the url if you want to dynamically change the middle or end of the url.  </li>
+<li>Check mark the "Create New Template" text box and enter the name of the template that you want to create. Click "Create New Template".</li>
+</ol>
+
+<p><img alt="enter url directly into parsehub to be scraped" src="../content/images/2016/06/go_to_new_url_parsehub.png" width="400"></p>
+
+<p>We are here to help you get started with the new version of ParseHub. <a href="../../contact.html">Contact</a> us and let us know what we can improve on at anytime. Bug reports and feature requests are welcome from all of you keen souls.</p>
+        </section>
+
+        <footer class="post-footer row">
+
+
+            <div class="col-lg-2">
+                <figure class="author-image">
+                    <a class="img" href="../author/angelina/index.html" style="background-image: url(../content/images/2016/06/angie.jpg)"><span class="hidden">Angelina Fomina's Picture</span></a>
+                </figure>
+            </div>
+
+            <div class="col-lg-6">
+              <section class="author">
+                  <h4><a href="../author/angelina/index.html">Angelina Fomina</a></h4>
+
+                      <p>Angelina is a co-founder of ParseHub - making online data accessible to all through a super nifty, powerful scraping tool. She creates ink illustrations, hikes and rock climbs in here spare time.</p>
+                  <div class="author-meta">
+                      
+                      
+                  </div>
+              </section>
+            </div>
+
+
+            <div class="col-lg-4">
+              <section class="share">
+                  <h4>Share this post</h4>
+                  <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Introducing%20a%20New%20Version%20of%20ParseHub&amp;url=https://www.parsehub.com/blog/introducing-a-new-version-of-parsehub/"
+                      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                      <span class="hidden">Twitter</span>
+                  </a>
+                  <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.parsehub.com/blog/introducing-a-new-version-of-parsehub/"
+                      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                      <span class="hidden">Facebook</span>
+                  </a>
+                  <a class="icon-google-plus" href="https://plus.google.com/share?url=https://www.parsehub.com/blog/introducing-a-new-version-of-parsehub/"
+                     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                      <span class="hidden">Google+</span>
+                  </a>
+              </section>
+            </div>
+
+
+        </footer>
+
+    <div id="disqus_thread"></div>
+    <script>
+      /**
+      * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+      */
+      var disqus_config = function () {
+      this.page.url = 'index.html'
+      this.page.identifier = 'ghost-6'; 
+      };
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+
+      s.src = '../../../parsehub.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+  </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story no-cover" href="../leveraging-data-scraping-for-commercial-due-diligence/index.html">
+        <section class="post">
+            <h2>Leveraging Data Scraping for Commercial Due Diligence</h2>
+            <p>Commercial due diligence, the assessment of a company’s business relative to its market, has for long shied away&hellip;</p>
+        </section>
+    </a>
+    <a class="read-next-story prev no-cover" href="../pink-tax-is-real-women-pay-43-more-for-personal-care-products-in-canada/index.html">
+        <section class="post">
+            <h2>Pink tax is real: women pay 43% more for personal care products in Canada</h2>
+            <p>The pink tax is very real for the Canadian female consumer. Looking at 3,191 personal care products from&hellip;</p>
+        </section>
+    </a>
+</aside>
+
+
+          </div>
+          <div class="col-md-3">
+            <div class="feature-widget">
+              <a href="../../quickstart.html">
+              <img src="../../static/images/parsehub_logo2.svg" class="img-responsive"/></a>
+            </div>
+            <div class="most_popular_widget">
+              <h4>Most popular:</h4>
+                <ol>
+                  <li>
+                    <a href="../get-10-000-quality-sales-leads-in-15-minutes/index.html">Get 10,000 sales leads in 15 minutes</a>
+                  </li>
+                  <li>
+                    <a href="../compare-product-prices-on-amazon-with-web-scraping/index.html">Compare product prices on Amazon</a>
+                  </li>
+                  <li>
+                    <a href="../cost-of-living-in-and-visiting-the-best-26-startup-cities/index.html">Cost of living in 26  start-up cities</a>
+                  </li>
+                  <li>
+                    <a href="../use-tableau-to-visualize-data-scraped-by-parsehub/index.html">Use Tableau to visualize scraped data</a>
+                  </li>
+                  <li>
+                    <a href="index.html">Introducing the new version of ParseHub</a>
+                  </li>
+                </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ph-footer">
+  <div class="row">
+    <div class="col-lg-2 col-md-3 col-sm-3 ph-footer-col">
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 ph-footer-col">
+      <h6>COMPANY</h6>
+      <p><a href="../../intro.html">About</a></p>
+      <p><a href="../index.html">Blog</a></p>
+      <p><a href="https://twitter.com/parsehub">Twitter</a></p>
+      <p><a href="../../contact.html">Contact</a></p>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 ph-footer-col">
+      <h6>PRODUCT</h6>
+      <p><a href="../../quickstart.html">Download</a></p>
+      <p><a href="../../features.html">Features</a></p>
+      <p><a href="../../pricing.html">Pricing</a></p>
+      <p><a href="https://calendly.com/parsehub-product-demo">Schedule a Demo</a></p>
+      <p><a href="../../terms.html">Terms</a></p>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 ph-footer-col">
+      <h6>HELP</h6>
+      <p><a href="../../docs/ref/api/v2/index.html">API Docs</a></p>
+      <p><a href="https://help.parsehub.com/">Tutorials</a></p>
+      <p><a href="https://help.parsehub.com/hc/en-us/categories/202725858-Videos">Videos</a></p>
+      <p><a href="https://help.parsehub.com/hc/en-us/sections/203974597-FAQ">FAQ</a></p>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 ph-footer-col">
+      <h6>CONNECT</h6>
+      <p><a href="https://twitter.com/parsehub" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></p>
+      <p><a href="https://www.linkedin.com/company/parsehub" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a></p>
+      <p><a href="https://plus.google.com/110491495169882588349/about/p/pub" target="_blank"><i class="fa fa-google-plus"></i> Google Plus</a></p>
+      <p><a href="https://www.youtube.com/channel/UCRfbcJQu9HZvc7uks2wmGzw" target="_blank"><i class="fa
+      fa-youtube"></i> YouTube</a></p>
+      <p><a href="../../contact.html" target="_blank"><i class="fa fa-envelope"></i>  Email us</a></p>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-3 ph-col-xs-1 footer-col">
+    </div>
+  </div>
+  <div class="row text-center">
+    <p class="footer-copyright"><a class="muted credit">&copy; 2015-2017 Parsehub.com</a></p>
+  </div>
+</div>
+    <script type="text/javascript" src="../../../code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+    <script type="text/javascript" src="../assets/js/jquery.fitvids164c.js?v=7e189249f9"></script>
+    <script type="text/javascript" src="../assets/js/index164c.js?v=7e189249f9"></script>
+    <script type="text/javascript" src="../assets/js/bootstrap.min164c.js?v=7e189249f9"></script>
+
+</body>
+
+<!-- Mirrored from www.parsehub.com/blog/introducing-a-new-version-of-parsehub/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 Mar 2019 02:20:26 GMT -->
+</html>

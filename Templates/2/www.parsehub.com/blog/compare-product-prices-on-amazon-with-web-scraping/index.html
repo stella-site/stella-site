@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.parsehub.com/blog/compare-product-prices-on-amazon-with-web-scraping/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 Mar 2019 02:16:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Compare Product Prices on Amazon with Web Scraping</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen164c.css?v=7e189249f9" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min164c.css?v=7e189249f9" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/custom164c.css?v=7e189249f9" />
+
+     <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-44399807-1', 'auto');
+        ga('send', 'pageview');
+      </script>
+
+      <script src="http://load.sumome.com/" data-sumo-site-id="186811ae19df34811e8922e29bfc8c50f6aea07dbdad726b1233786bf819d46e" async="async"></script>
+
+    <link rel="canonical" href="index.html" />
+    <meta name="referrer" content="origin" />
+    
+    <meta property="og:site_name" content="ParseHub" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Compare Product Prices on Amazon with Web Scraping" />
+    <meta property="og:description" content="Do you want to sell iPhones on Amazon? How about some new funky shoes that you don&#x27;t think are available on the market yet? You can use ParseHub to collect product information into an Excel file, for pricing analysis. With web scraping and the hacks in this article, you don&#x27;t" />
+    <meta property="og:url" content="https://www.parsehub.com/blog/compare-product-prices-on-amazon-with-web-scraping/" />
+    <meta property="article:published_time" content="2015-12-11T13:00:00.000Z" />
+    <meta property="article:modified_time" content="2017-08-29T06:06:30.442Z" />
+    <meta property="article:tag" content="eCommerce" />
+    <meta property="article:tag" content="Pricing Intelligence" />
+    <meta property="article:tag" content="Amazon" />
+    <meta property="article:tag" content="Web Scraping" />
+    <meta property="article:tag" content="Business Hacks" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Compare Product Prices on Amazon with Web Scraping" />
+    <meta name="twitter:description" content="Do you want to sell iPhones on Amazon? How about some new funky shoes that you don&#x27;t think are available on the market yet? You can use ParseHub to collect product information into an Excel file, for pricing analysis. With web scraping and the hacks in this article, you don&#x27;t" />
+    <meta name="twitter:url" content="https://www.parsehub.com/blog/compare-product-prices-on-amazon-with-web-scraping/" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Angelina Fomina" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="eCommerce, Pricing Intelligence, Amazon, Web Scraping, Business Hacks" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "ParseHub",
+        "logo": "https://www.parsehub.com/blog/ghost/img/ghosticon.jpg"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Angelina Fomina",
+        "image": "https://www.parsehub.com/blog/content/images/2016/06/angie.jpg",
+        "url": "https://www.parsehub.com/blog/author/angelina/",
+        "sameAs": [],
+        "description": "Angelina is a co-founder of ParseHub - making online data accessible to all through a super nifty, powerful scraping tool. She creates ink illustrations, hikes and rock climbs in here spare time."
+    },
+    "headline": "Compare Product Prices on Amazon with Web Scraping",
+    "url": "https://www.parsehub.com/blog/compare-product-prices-on-amazon-with-web-scraping/",
+    "datePublished": "2015-12-11T13:00:00.000Z",
+    "dateModified": "2017-08-29T06:06:30.442Z",
+    "keywords": "eCommerce, Pricing Intelligence, Amazon, Web Scraping, Business Hacks",
+    "description": "Do you want to sell iPhones on Amazon? How about some new funky shoes that you don&#x27;t think are available on the market yet? You can use ParseHub to collect product information into an Excel file, for pricing analysis. With web scraping and the hacks in this article, you don&#x27;t"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.8" />
+    <link rel="alternate" type="application/rss+xml" title="ParseHub" href="../rss/index.html" />
+</head>
+<body class="post-template tag-ecommerce tag-pricing-intelligence tag-amazon tag-web-scraping tag-business-hacks">
+
+    <nav class="navbar navbar-default" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse"
+        data-target="#example-navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <span>
+      <a rel="home" href="../../index.html"
+        title="ParseHub - scrape data from interactive websites">
+        <img src="../../static/images/parsehub_logo2.svg"
+            height="33px"
+            style="margin-top:17px"/>
+      </a>
+    </span>
+  </div>
+  <div class="collapse navbar-collapse" id="example-navbar-collapse">
+    <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav">
+        <li><a href="../index.html">Blog</a></li>
+        <li class="blog_header_accent"><a href="../tag/how-to-guides/index.html">Guides</a></li>
+        <li><a href="../tag/data-fun/index.html">Data Fun</a></li>
+        <li><a href="../tag/business-hacks/index.html">Business Hacks</a></li>
+        <li><a href="../tag/how-to-guides/index.html">Developers</a></li>
+        <li><a href="../tag/start-up-journey/index.html">Start-up Journey</a></li>
+        <li><a href="../tag/product-updates/index.html">Product Updates</a></li>
+      </ul>
+    </ul>
+  </div>
+</nav>
+    <div class="site-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            
+
+
+<main class="content" role="main">
+    <article class="post tag-ecommerce tag-pricing-intelligence tag-amazon tag-web-scraping tag-business-hacks">
+
+        <header class="post-header">
+            <h1 class="post-title">Compare Product Prices on Amazon with Web Scraping</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2015-12-11">11 December 2015</time>  on <a href="../tag/ecommerce/index.html">eCommerce</a>, <a href="../tag/pricing-intelligence/index.html">Pricing Intelligence</a>, <a href="../tag/amazon/index.html">Amazon</a>, <a href="../tag/web-scraping/index.html">Web Scraping</a>, <a href="../tag/business-hacks/index.html">Business Hacks</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>Do you want to sell iPhones on Amazon? How about some new funky shoes that you don't think are available on the market yet? You can use ParseHub to collect product information into an Excel file, for pricing analysis. With web scraping and the hacks in this article, you don't have to spend any more time copying and pasting pricing data from the web.</p>
+
+<p><strong>In this tutorial you will learn how to:</strong></p>
+
+<ol>
+<li><p>Tell <a href="../../index.html">ParseHub</a> to search for products in three different toy categories.</p></li>
+<li><p>Get the price, description, and reviews for each product you searched for on Amazon.</p></li>
+<li><p><strong>BONUS</strong>: Tell ParseHub to search for 40 toy brands on Amazon automatically. Use <a href="https://shancarter.github.io/mr-data-converter/">Mr. Data Converter</a> to convert the list of brands from Excel to JSON and easily add the list into the ParseHub extension.</p></li>
+</ol>
+
+<h1 id="searchforproductsin3categoriesonamazon">Search for products in 3 categories on Amazon</h1>
+
+<h3 id="openparsehubandamazon">Open ParseHub and Amazon</h3>
+
+<ol>
+<li>Open the <a href="../../index.html">ParseHub</a> desktop app.  </li>
+<li>Open the following link - <b><a href="http://www.amazon.com/">http://www.amazon.com/</a></b><br> in the browser. <em>If you are in a country outside of the United States, you may be prompted to travel to a different home page, like amazon.ca in Canada. If that is the case, just click on the yellow button to travel to your country’s home page.</em>  </li>
+<li>Click ParseHub’s ”New Project“ button, then the “Start project on this URL” button, to create a new project from this page.<br></li>
+</ol>
+
+<h3 id="enterthethreeproductcategoriesintoparsehub">Enter the three product categories into ParseHub</h3>
+
+<p>Let's search for three different types of doll brands on Amazon.</p>
+
+<ol>
+<li>Open the "Settings" tab of the ParseHub project.  </li>
+<li>In the "Starting Value:" text box enter your keywords <br />
+in JSON format, as seen in the line of code below. The keywords can be whatever you would like to search for. Even the list name "keywords" can be renamed to whatever you want, such as "terms”, or "brands". </li>
+</ol>
+
+<pre><code>{"keywords":["Barbie Dolls","Bratz Dolls","Disney Dolls"]}</code></pre>
+
+<p><img src="../content/images/2016/06/scrape_multiple_brands_Amazon.png" alt="ParseHub starting values" width="300px"/></p>
+
+<h3 id="createalooptosearchthroughallofthecategories">Create a loop to search through all of the categories</h3>
+
+<ol>
+<li>Click the <a href="https://parsehubhelp.zendesk.com/hc/en-us/articles/220053907-Where-is-the-Plus-Button-">"plus"</a> button next to the command "Select page(1)" to open the command menu.  </li>
+<li>Open the "Advanced" menu and add the Loop tool.  </li>
+<li>In the "for each" text box leave the text as <strong>item</strong>. You can change this text to anything you want, such as "brand" or "term".  </li>
+<li>In the "In" text box enter the name of the list. In this case the name is <strong>keywords</strong>, so type that in without quotation marks.  </li>
+<li>Click on the "x" button next to the command Empty selection1 (0)" to delete it.</li>
+</ol>
+
+<p><img src="../content/images/2016/06/scrape_multiple_brands_Amazon_two.png" alt="search through multiple brands on Amazon" width="300px"/></p>
+
+<h3 id="selectthecorrectsearchform">Select the correct search form</h3>
+
+<ol>
+<li>Click on the "plus" button next to the Loop that you just added, and open up the "Advanced" menu to choose the command "Begin New Entry". This separates the data by each brand in the JSON and CSV files that ParseHub will give you.  </li>
+<li>Name the list of new entries whatever you want, I called it <strong>brands</strong>.  </li>
+<li>Click on the "plus" button next to the Begin New Entry command, and add the Select command.  </li>
+<li>Click on the Amazon search bar to select it. This automatically adds an Input command.  </li>
+<li>In the Input type drop down menu and change it from "text" to "expression".  </li>
+<li>In the input text box, write <strong>item</strong> with no quotation marks.  </li>
+<li>Lastly, I went back to the "Select selection1" command and renamed it "search_bar"</li>
+</ol>
+
+<p>You have just told ParseHub to select the search box and enter each keyword, such as "Barbie Dolls", into the search bar one by one.</p>
+
+<p><img src="../content/images/2016/06/scrape_multiple_brands_Amazon_three.png" alt="search through multiple brands on Amazon" width="600px"/></p>
+
+<h3 id="navigatetotheresultsforeachsearch">Navigate to the results for each search</h3>
+
+<ol>
+<li>Hold down shift and click on the "plus" button that appears next to the "Input item" command.  </li>
+<li>Add another Select command, and click on the magnifying glass search button next to the search bar to select it.  </li>
+<li>Rename <strong>selection1</strong> as <strong>search_button</strong>  </li>
+<li>Add a Click command by clicking on the "plus" button next to the Select command.  </li>
+<li>Choose "Create New Template" and enter the name of the new template that you would like to create, like <strong>results</strong>.  </li>
+<li>Click on the "Create New Template" button </li>
+</ol>
+
+<p>This tells ParseHub to click on the button and navigate to the list of products for each different search.</p>
+
+<p><img src="../content/images/2016/06/scrape_multiple_brands_Amazon_four.png" alt="web scrape a list of results on Amazon" width="600px"/></p>
+
+<h3 id="scrapealloftheproductsforeachbrand">Scrape all of the products for each brand</h3>
+
+<ol>
+<li>To open the right search results, click on the slider in the top right of the ParseHub toolbar to switch it from "Select" mode to "Browse" mode.  Now you can navigate Amazon as if you were using a regular browser. Search for "Barbie Dolls". Now you are on the type of page you would like to scrape.  </li>
+<li>Now let's select a few products on the page. First, click on the slider again so that you switch from "Browse" mode to "Select mode".  </li>
+<li>There will automatically be a Select command added. Select the name of the product by clicking on it. <em>Scroll through the rest of the page to make sure ParseHub has selected all of the products. If not, keep clicking on the ones that have not been selected.</em>  </li>
+<li>The rest of the products on the page will be highlighted in yellow. Click on a second one to select them all. This will automatically add three new commands: "Begin New Entry in selection 1", "Extract name" and "Extract url". Rename these however you would like.</li>
+</ol>
+
+<p><img src="../content/images/2016/06/scrape_multiple_brands_Amazon_five.png" alt="scrape products from each brand" width="600px"/></p>
+
+<h2 id="scrapethepricereviewsanddescriptionofalltheproducts">Scrape the price, reviews and description of all the products</h2>
+
+<h3 id="navigatetothedetailspageofeachproduct">Navigate to the details page of each product</h3>
+
+<ol>
+<li>Click on the "plus" button next to the Begin New Entry command and choose the Click command.  </li>
+<li>In the text box write <strong>details</strong> and click "Create New Template".</li>
+</ol>
+
+<p>This tells ParseHub to click on each product and go to the corresponding details page for each product.</p>
+
+<p><img src="../content/images/2016/06/amazon_scraping_tutorial_one.png" alt="navigate to the details page of each product" width="600px"/></p>
+
+<h3 id="scrapethepricesandcustomerreviewsforeachproduct">Scrape the prices and customer reviews for each product</h3>
+
+<ol>
+<li>Click on the "Create New Template" button. This will automatically take you to the first product page.  </li>
+<li>Add a Select command and click on the price of the product.  </li>
+<li>Scroll down until you see the "Customer Reviews" section.  </li>
+<li>Click on the "plus" button next to "Select page".  </li>
+<li>Choose the Select command and click on the percentage beside the 5 star column. Name it "star5" since your name can't start with a number.  </li>
+<li>Click on the "plus" button beside the "Select page" command again, and click on the 4 star percentage, naming it star4.  </li>
+<li>Do this for the 3, 2 and 1 star percentages as well, remembering to click the "plus" button on the "Select page" command and not a different command.  </li>
+<li>Add one more Select command and click on the product Description to extract it as well.</li>
+</ol>
+
+<p>You have now told ParseHub to extract the price, description, and the ratings of this doll. That means ParseHub will select the price, description, and ratings of every doll on the first page after you search for one of your search results. You will also have the URLs to the 5, 4, 3, 2, and 1 star reviews, if you would like to visit them.</p>
+
+<p><img src="../content/images/2016/06/amazon_scraping_tutorial_two-1.png" alt="scrape the prices and customer reviews for each product" width="600px"/></p>
+
+<h3 id="runtheprojectanddownloadyourresults">Run the project and download your results</h3>
+
+<ol>
+<li>Click on the "Get Data" button.  </li>
+<li>Click on "Run" and "Run and Save".  </li>
+<li>Wait for ParseHub to collect the data for a few minutes. When you see the CSV and JSON buttons appear click on one of them to download your data in Excel or JSON format.  </li>
+<li>You can also connect to our API by checking out this <a href="../../docs/ref/api/v2/index.html">API reference</a>.</li>
+</ol>
+
+<h2 id="bonusconvertcategoriesfromexcelintojsondataforeasyinput">BONUS: Convert categories from Excel into JSON data for easy input</h2>
+
+<p>You may want to search through more than just 3 categories <br />
+on Amazon. What if you had a thousand 10 thousand words that you would like to search for, and you happen to have them in an excel spreadsheet?</p>
+
+<p>You can easily convert any data in Excel into JSON using <a href="https://shancarter.github.io/mr-data-converter/">Mr. Data Converter</a>.</p>
+
+<p><img src="../content/images/2016/06/amazon_scraping_tutorial_four-1.png" alt="convert Excel data into JSON data" width="600px"/></p>
+
+<p>Let's use <a href="https://shancarter.github.io/mr-data-converter/">Mr. Data Converter</a> to convert your hypothetical list of categories <br />
+into JSON.</p>
+
+<ol>
+<li>Open <a href="https://shancarter.github.io/mr-data-converter/">Mr. Data Converter</a>.  </li>
+<li>Open your Excel file that has all of the keywords and copy them.  </li>
+<li>Paste the copied keywords into Mr. Data Converter.  </li>
+<li>Select "JSON - Column Arrays" from the dropdown.</li>
+</ol>
+
+<p>Now you are ready to take this information and paste it into ParseHub. ParseHub will search for all of the 40 keywords that you are about to enter.</p>
+
+<h3 id="searchfor40categoriesonamazon">Search for 40 categories on Amazon</h3>
+
+<ol>
+<li>Copy the JSON output from Mr. Data Converter.  </li>
+<li>Open the "Settings" tab of your ParseHub project.  </li>
+<li>In the <strong>Starting Value</strong> text box paste the keywords.  </li>
+<li>Thats it! Your project will run exactly the same way as it ran <br />
+at the beginning of this tutorial. The only difference is the number <br />
+of categories ParseHub will search through.</li>
+</ol>
+
+<p><img src="../content/images/2016/06/amazon_scraping_tutorial_six.png" alt="starting values from Mr. Data Converter" width="300px"/></p>
+
+<p>Entering thousands of search terms into a web scraping tool has never been easier. You can do the same with urls and multiple search values if you have more than one search box in the form.</p>
+
+<p>If you need any help setting up a similar type of project just reach <br />
+out to me at angelina[at]parsehub[dot]com.</p>
+        </section>
+
+        <footer class="post-footer row">
+
+
+            <div class="col-lg-2">
+                <figure class="author-image">
+                    <a class="img" href="../author/angelina/index.html" style="background-image: url(../content/images/2016/06/angie.jpg)"><span class="hidden">Angelina Fomina's Picture</span></a>
+                </figure>
+            </div>
+
+            <div class="col-lg-6">
+              <section class="author">
+                  <h4><a href="../author/angelina/index.html">Angelina Fomina</a></h4>
+
+                      <p>Angelina is a co-founder of ParseHub - making online data accessible to all through a super nifty, powerful scraping tool. She creates ink illustrations, hikes and rock climbs in here spare time.</p>
+                  <div class="author-meta">
+                      
+                      
+                  </div>
+              </section>
+            </div>
+
+
+            <div class="col-lg-4">
+              <section class="share">
+                  <h4>Share this post</h4>
+                  <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Compare%20Product%20Prices%20on%20Amazon%20with%20Web%20Scraping&amp;url=https://www.parsehub.com/blog/compare-product-prices-on-amazon-with-web-scraping/"
+                      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                      <span class="hidden">Twitter</span>
+                  </a>
+                  <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.parsehub.com/blog/compare-product-prices-on-amazon-with-web-scraping/"
+                      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                      <span class="hidden">Facebook</span>
+                  </a>
+                  <a class="icon-google-plus" href="https://plus.google.com/share?url=https://www.parsehub.com/blog/compare-product-prices-on-amazon-with-web-scraping/"
+                     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                      <span class="hidden">Google+</span>
+                  </a>
+              </section>
+            </div>
+
+
+        </footer>
+
+    <div id="disqus_thread"></div>
+    <script>
+      /**
+      * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+      */
+      var disqus_config = function () {
+      this.page.url = 'index.html'
+      this.page.identifier = 'ghost-9'; 
+      };
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+
+      s.src = '../../../parsehub.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+  </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story no-cover" href="../scrape-web-content-into-google-sheets/index.html">
+        <section class="post">
+            <h2>Scrape Web Content into Google Sheets</h2>
+            <p>Sometimes information from your favorite websites is not available via an API or an RSS feed. Before analyzing the&hellip;</p>
+        </section>
+    </a>
+    <a class="read-next-story prev no-cover" href="../scrape-competitor-prices-from-ebay/index.html">
+        <section class="post">
+            <h2>Scrape competitor prices from eBay</h2>
+            <p>As a seller on eBay it’s crucial to understand how your competitors are pricing their products. Consistently collecting&hellip;</p>
+        </section>
+    </a>
+</aside>
+
+
+          </div>
+          <div class="col-md-3">
+            <div class="feature-widget">
+              <a href="../../quickstart.html">
+              <img src="../../static/images/parsehub_logo2.svg" class="img-responsive"/></a>
+            </div>
+            <div class="most_popular_widget">
+              <h4>Most popular:</h4>
+                <ol>
+                  <li>
+                    <a href="../get-10-000-quality-sales-leads-in-15-minutes/index.html">Get 10,000 sales leads in 15 minutes</a>
+                  </li>
+                  <li>
+                    <a href="index.html">Compare product prices on Amazon</a>
+                  </li>
+                  <li>
+                    <a href="../cost-of-living-in-and-visiting-the-best-26-startup-cities/index.html">Cost of living in 26  start-up cities</a>
+                  </li>
+                  <li>
+                    <a href="../use-tableau-to-visualize-data-scraped-by-parsehub/index.html">Use Tableau to visualize scraped data</a>
+                  </li>
+                  <li>
+                    <a href="../introducing-a-new-version-of-parsehub/index.html">Introducing the new version of ParseHub</a>
+                  </li>
+                </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ph-footer">
+  <div class="row">
+    <div class="col-lg-2 col-md-3 col-sm-3 ph-footer-col">
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 ph-footer-col">
+      <h6>COMPANY</h6>
+      <p><a href="../../intro.html">About</a></p>
+      <p><a href="../index.html">Blog</a></p>
+      <p><a href="https://twitter.com/parsehub">Twitter</a></p>
+      <p><a href="../../contact.html">Contact</a></p>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 ph-footer-col">
+      <h6>PRODUCT</h6>
+      <p><a href="../../quickstart.html">Download</a></p>
+      <p><a href="../../features.html">Features</a></p>
+      <p><a href="../../pricing.html">Pricing</a></p>
+      <p><a href="https://calendly.com/parsehub-product-demo">Schedule a Demo</a></p>
+      <p><a href="../../terms.html">Terms</a></p>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 ph-footer-col">
+      <h6>HELP</h6>
+      <p><a href="../../docs/ref/api/v2/index.html">API Docs</a></p>
+      <p><a href="https://help.parsehub.com/">Tutorials</a></p>
+      <p><a href="https://help.parsehub.com/hc/en-us/categories/202725858-Videos">Videos</a></p>
+      <p><a href="https://help.parsehub.com/hc/en-us/sections/203974597-FAQ">FAQ</a></p>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 ph-footer-col">
+      <h6>CONNECT</h6>
+      <p><a href="https://twitter.com/parsehub" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></p>
+      <p><a href="https://www.linkedin.com/company/parsehub" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a></p>
+      <p><a href="https://plus.google.com/110491495169882588349/about/p/pub" target="_blank"><i class="fa fa-google-plus"></i> Google Plus</a></p>
+      <p><a href="https://www.youtube.com/channel/UCRfbcJQu9HZvc7uks2wmGzw" target="_blank"><i class="fa
+      fa-youtube"></i> YouTube</a></p>
+      <p><a href="../../contact.html" target="_blank"><i class="fa fa-envelope"></i>  Email us</a></p>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-3 ph-col-xs-1 footer-col">
+    </div>
+  </div>
+  <div class="row text-center">
+    <p class="footer-copyright"><a class="muted credit">&copy; 2015-2017 Parsehub.com</a></p>
+  </div>
+</div>
+    <script type="text/javascript" src="../../../code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+    <script type="text/javascript" src="../assets/js/jquery.fitvids164c.js?v=7e189249f9"></script>
+    <script type="text/javascript" src="../assets/js/index164c.js?v=7e189249f9"></script>
+    <script type="text/javascript" src="../assets/js/bootstrap.min164c.js?v=7e189249f9"></script>
+
+</body>
+
+<!-- Mirrored from www.parsehub.com/blog/compare-product-prices-on-amazon-with-web-scraping/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 Mar 2019 02:17:44 GMT -->
+</html>

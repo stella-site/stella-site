@@ -1,0 +1,577 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.parsehub.com/pricing by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 Mar 2019 02:12:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+					<script type="text/javascript" src="static/js/main.js"></script>
+  
+  
+  
+    <meta charset="utf-8">
+    
+    <title>Free and Subscription Plans - ParseHub Pricing</title>
+  
+    
+    <meta name="keywords"
+        content="scrapy,web scraping,web scraper,data,extraction,data mining">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="shortcut icon" href="static/images/phmini2.png"/>
+    <link type="text/css" href="static/css/main.css" rel="stylesheet"/>
+
+
+
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44399807-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  
+  <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+  <script type="text/javascript" src="../checkout.stripe.com/checkout.js"></script>
+
+</head>
+<body ng-app="phApp">
+  
+    <div class="mainheader">
+      <nav class="navbar navbar-default" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse"
+        data-target="#example-navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a rel="home" href="index.html" title="ParseHub: Easily extract data from any website">
+      <div id="logoImage">
+      </div>
+    </a>
+  </div>
+
+  <div class="collapse navbar-collapse" id="example-navbar-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav cl-effect-3">
+        <li><a href="features.html">Features</a></li>
+        <li><a href="quickstart.html">Download</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="https://help.parsehub.com/">Help</a></li>
+        <li><a href="blog/index.html">Blog</a></li>
+        <li><a class="navbar-login" href="login.html">Log in</a></li>
+        <li>
+          <button id="btn-go-to-register" class="btn ph-btn-orange ph-btn-large"
+            style="margin-top: 5px;"
+            onclick="window.location.href='register.html'">Sign up</button>
+        </li>
+      </ul>
+    </ul>
+  </div>
+</nav>
+
+    </div>
+  
+  <div class="wrapper" ng-controller="ph_ScrollToHashCtrl">
+    
+
+
+
+
+
+<div class="container-fluid pricing-container text-center" ng-controller="ph_PriceCtrl">
+  <div class="row">
+    <div class="landing-page-responsive">
+      <h2 class="page-title">A plan for all of your web scraping needs</h2>
+      
+      <div class="billing">
+        <label>
+          <input type="radio"
+              name="billing"
+              ng-model="billing.quarterly"
+              ng-value="false"/>
+           Monthly Billing
+        </label>
+        <label>
+          <input type="radio"
+              name="billing"
+              ng-model="billing.quarterly"
+              ng-value="true"/>
+           Quarterly Billing <span class="savemessage">SAVE 15%</span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="row feature-row pricing-row">
+    <div class="landing-page-responsive extra-pricing-padding">
+        <div class="col-md-3 plan-col">
+          <div class="panel-everyone">
+            <div class="panel-heading ">
+              Everyone
+            </div>
+            <table>
+              <tbody>
+                <tr>
+                  <th>
+                    <h2 ng-if="billing.quarterly">FREE</h2>
+                    <h2 ng-if="!billing.quarterly">FREE</h2>
+                    <p>
+                      <b ng-if="billing.quarterly">No credit card required - $99 value</b>
+                      <b ng-if="!billing.quarterly">No credit card required - $99 value</b>
+                    </p>
+                  </th>
+                </tr>
+                  <tr class="feature-2">
+                    <td>
+                      <h5>Get <strong>200 pages</strong> of data in only <strong class="large-text">40 minutes</strong></h5>
+                    </td>
+                  </tr>
+                  <tr class="feature-1">
+                    <td>
+                      <h5><strong>200 pages</strong> per run</h5>
+                    </td>
+                  </tr>
+                  <tr class="feature-1">
+                    <td>
+                      <h5><strong>5</strong> public projects <strong data-toggle="tooltip" data-placement="bottom" title="The project design as well as any data scraped from a public project may be shared publicly without notice." class="phtooltip" style="cursor:default;">*</strong></h5>
+                    </td>
+                  </tr>
+                  <tr class="feature-1">
+                    <td>
+                      <h5>Limited support</h5>
+                    </td>
+                  </tr>
+                  <tr class="feature-1">
+                    <td>
+                      <h5>Data retention for <strong>14</strong> days</h5>
+                    </td>
+                  </tr>
+                  <tr class="feature-2">
+                    <td>
+                      <h5>-</h5>
+                    </td>
+                  </tr>
+                  <tr class="feature-1">
+                    <td>
+                      <h5>-</h5>
+                    </td>
+                  </tr>
+                  <tr class="feature-1">
+                    <td>
+                      <h5>-</h5>
+                    </td>
+                  </tr>
+              </tbody>
+            </table>
+              <button class="btn btn-buy" onclick="window.location.href='quickstart.html'">Download</button>
+          </div>
+        </div>
+        <div class="col-md-3 plan-col">
+          <div class="panel-premium">
+            <div class="panel-heading panel-heading-main">
+              Standard
+            </div>
+            <table>
+              <tbody>
+                <tr>
+                  <th>
+                    <h2 ng-if="billing.quarterly">$125</h2>
+                    <h2 ng-if="!billing.quarterly">$149</h2>
+                    <p>
+                      <b ng-if="billing.quarterly">per month, billed quarterly</b>
+                      <b ng-if="!billing.quarterly">per month, cancel anytime</b>
+                    </p>
+                  </th>
+                </tr>
+                  <tr class="feature-2">
+                    <td>
+                      <h5>Get <strong>200 pages</strong> of data in only <strong class="large-text">10 minutes</strong></h5>
+                    </td>
+                  </tr>
+                  <tr class="feature-1">
+                    <td>
+                      <h5><strong>10,000</strong> pages per run</h5>
+                    </td>
+                  </tr>
+                  <tr class="feature-1">
+                    <td>
+                      <h5><strong>20</strong> private projects</h5>
+                    </td>
+                  </tr>
+                  <tr class="feature-1">
+                    <td>
+                      <h5>Standard support</h5>
+                    </td>
+                  </tr>
+                  <tr class="feature-1">
+                    <td>
+                      <h5>Data retention for <strong>14</strong> days</h5>
+                    </td>
+                  </tr>
+                  <tr class="feature-2">
+                    <td>
+                      <h5>Save images & files to DropBox or S3</h5>
+                    </td>
+                  </tr>
+                  <tr class="feature-1">
+                    <td>
+                      <h5>IP Rotation</h5>
+                    </td>
+                  </tr>
+                  <tr class="feature-1">
+                    <td>
+                      <h5>Scheduling</h5>
+                    </td>
+                  </tr>
+              </tbody>
+            </table>
+              <button class="btn btn-buy" data-toggle="modal" data-target="#pricing-login-modal">Buy</button>
+          </div>
+        </div>
+        <div class="col-md-3 plan-col">
+          <div class="panel-pro">
+            <div class="panel-heading ">
+              Professional
+            </div>
+            <table>
+              <tbody>
+                <tr>
+                  <th>
+                    <h2 ng-if="billing.quarterly">$425</h2>
+                    <h2 ng-if="!billing.quarterly">$499</h2>
+                    <p>
+                      <b ng-if="billing.quarterly">per month, billed quarterly</b>
+                      <b ng-if="!billing.quarterly">per month, cancel anytime</b>
+                    </p>
+                  </th>
+                </tr>
+                  <tr class="feature-2">
+                    <td>
+                      <h5>Get <strong>200 pages</strong> of data in under <strong class="large-text">2 minutes</strong></h5>
+                    </td>
+                  </tr>
+                  <tr class="feature-1">
+                    <td>
+                      <h5><strong>Unlimited</strong> pages per run</h5>
+                    </td>
+                  </tr>
+                  <tr class="feature-1">
+                    <td>
+                      <h5><strong>120</strong> private projects</h5>
+                    </td>
+                  </tr>
+                  <tr class="feature-1">
+                    <td>
+                      <h5>Priority support</h5>
+                    </td>
+                  </tr>
+                  <tr class="feature-1">
+                    <td>
+                      <h5>Data retention for <strong>30</strong> days</h5>
+                    </td>
+                  </tr>
+                  <tr class="feature-2">
+                    <td>
+                      <h5>Save images & files to DropBox or S3</h5>
+                    </td>
+                  </tr>
+                  <tr class="feature-1">
+                    <td>
+                      <h5>IP Rotation</h5>
+                    </td>
+                  </tr>
+                  <tr class="feature-1">
+                    <td>
+                      <h5>Scheduling</h5>
+                    </td>
+                  </tr>
+              </tbody>
+            </table>
+              <button class="btn btn-buy" data-toggle="modal" data-target="#pricing-login-modal">Buy</button>
+          </div>
+        </div>
+        <div class="col-md-3 plan-col">
+          <div class="panel-enterprise">
+            <div class="panel-heading ">
+              Enterprise
+            </div>
+            <table>
+              <tbody>
+                <tr>
+                  <th>
+                    <h2 ng-if="billing.quarterly">Contact Us</h2>
+                    <h2 ng-if="!billing.quarterly">Contact Us</h2>
+                    <p>
+                      <b ng-if="billing.quarterly"></b>
+                      <b ng-if="!billing.quarterly"></b>
+                    </p>
+                  </th>
+                </tr>
+                  <tr class="feature-2">
+                    <td>
+                      <h5><strong>Dedicated</strong> scraping speeds across all running projects</h5>
+                    </td>
+                  </tr>
+                  <tr class="feature-1">
+                    <td>
+                      <h5><strong>Unlimited</strong> pages per run</h5>
+                    </td>
+                  </tr>
+                  <tr class="feature-1">
+                    <td>
+                      <h5><strong>Custom</strong> number of projects</h5>
+                    </td>
+                  </tr>
+                  <tr class="feature-1">
+                    <td>
+                      <h5>High priority support</h5>
+                    </td>
+                  </tr>
+                  <tr class="feature-1">
+                    <td>
+                      <h5>Data retention for <strong>30</strong> days</h5>
+                    </td>
+                  </tr>
+                  <tr class="feature-2">
+                    <td>
+                      <h5>Save images & files to DropBox or S3</h5>
+                    </td>
+                  </tr>
+                  <tr class="feature-1">
+                    <td>
+                      <h5>IP Rotation</h5>
+                    </td>
+                  </tr>
+                  <tr class="feature-1">
+                    <td>
+                      <h5>Scheduling</h5>
+                    </td>
+                  </tr>
+              </tbody>
+            </table>
+              <button class="btn btn-buy" onclick="window.location.href='contact.html'">Contact Us</button>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="row subtext-row">
+    <p>All users start on the free plan. No credit card is required to sign up. Pay only when you decide to switch to the more advanced plans. Guaranteed refunds if you are not happy.</p>
+    <p>By law: Canadian tax applied to Canadian customers.</p>
+  </div>
+  <div class="row feature-row question-row">
+    <div class="landing-page-responsive extra-pricing-padding">
+      <div class="col-md-6">
+        <p><strong>What is a project?</strong></p>
+        <p class="answer">
+          One project typically scrapes data from one website.
+          You can also combine data from multiple websites in a single project.
+        </p>
+
+        <p><strong>What is a run?</strong></p>
+        <p class="answer">
+          A project can be run multiple times,
+          for example on different starting urls or at different times of day.
+          All runs will crawl the target website at the same time as long as you
+          are under the speed limit for your account.
+        </p>
+
+        <p><strong>What is the difference between private and public projects?</strong></p>
+        <p class="answer">
+          Private projects are not browseable by any other users.
+          Public project designs and the data from their runs may be shared
+          with other users.
+        </p>
+
+        <p><strong>What does the scraping speed per minute mean?</strong></p>
+        <p class="answer">
+          Each plan has a maximum speed limit on how fast ParseHub will collect
+          the data.
+          If you start enough runs to exceed the speed limit on your plan, they
+          will be automatically queued until there is enough capacity.
+        </p>
+        <p><strong>Are your prices in US Dollars or Canadian Dollars?</strong></p>
+        <p class="answer">
+          All of our prices and quotes are in US Dollars.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <p><strong>Do you give refunds?</strong></p>
+        <p class="answer">
+          Yes! If you are not happy with your plan we will give you a full
+          refund no questions asked.
+        </p>
+
+        <p><strong>I'm having issues getting data. What's wrong?</strong></p>
+        <p class="answer">
+          <a class="link" href="contact.html">Contact us</a> and we will help you.
+          Check out our <a class="link" href="docs/ref/api/v2/index.html">API docs</a>
+          and <a class="link" href="https://help.parsehub.com/hc/en-ust">tutorials</a> for more answers.
+        </p>
+
+        <p><strong>Do you give discounts?</strong></p>
+        <p class="answer">
+          We offer discounts to non-profits, students and academic institutions.
+          <a class="link" href="contact.html">Contact us</a> and let us know.
+        </p>
+
+        <p><strong>Can you set up projects for me?</strong></p>
+        <p class="answer">
+          Yes, we can set up projects for you and deliver data on-demand
+          for an extra fee or on our custom plan.
+          <a class="link" href="contact.html">Get a quote!</a>
+        </p>
+
+        <p><strong>Can I get extra projects and faster speed?</strong></p>
+        <p class="answer">
+          Yes! <a class="link" href="contact.html">Contact us</a> and we will set
+          you up with a custom plan to meet your needs.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row feature-row text-center bottom-row">
+    <div class="landing-page-responsive">
+      <h1 class="heading">
+        Need help picking out the right plan for you?
+      </h1>
+      <h4>We can create custom features and projects for you.</h4>
+      <link href="../calendly.com/assets/external/widget.css" rel="stylesheet">
+      <script src="../calendly.com/assets/external/widget.js" type="text/javascript"></script>
+      <a class="getting-started" href="#" onclick="Calendly.showPopupWidget('https://calendly.com/parsehub-product-demo');return false;">Schedule time with us</a>
+    </div>
+  </div>
+</div>
+<div class="modal fade"
+    id="pricing-login-modal"
+    tabindex="-1"
+    role="dialog"
+    ng-controller="ph_LoginOnPricingCtrl">
+  <div class="modal-dialog pricing-modal">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row text-right">
+          <button type="button" class="close log-in-close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h3 class="login-heading">Please Log in to Purchase</h3>
+            <input type="text"
+                ng-model="loginCheck.email"
+                class="form-control input-lg"
+                placeholder="Email">
+            <input type="password"
+                ng-model="loginCheck.password"
+                class="form-control input-lg"
+                placeholder="Password">
+            <button
+            class="btn ph-btn-green btn-block ph-btn-large"
+            ng-click="login()">Log in</button>
+            <div class="login-help-top text-center">
+              <a class="form-link-primary" href="reset_request.html" target="_blank">Forgot Password?</a>
+            </div>
+            <div class="login-help text-center">
+              Don't have an account yet? <a href="register.html">Register here.</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div class="push"></div>
+  
+    <div>
+      
+<div class="ph-footer">
+  <div class="row">
+    <div class="col-lg-2 col-md-3 col-sm-3 ph-footer-col">
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 ph-footer-col">
+      <h6>COMPANY</h6>
+      <p><a href="intro.html">About</a></p>
+      <p><a href="blog/index.html">Blog</a></p>
+      <p><a href="https://twitter.com/parsehub">Twitter</a></p>
+      <p><a href="contact.html">Contact</a></p>
+      <p><a href="partners.html">Partners</a></p>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 ph-footer-col">
+      <h6>PRODUCT</h6>
+      <p><a href="quickstart.html">Download</a></p>
+      <p><a href="features.html">Features</a></p>
+      <p><a href="pricing.html">Pricing</a></p>
+      <link href="../calendly.com/assets/external/widget.css" rel="stylesheet">
+      <script src="../calendly.com/assets/external/widget.js" type="text/javascript"></script>
+      <p><a href="#" onclick="Calendly.showPopupWidget('https://calendly.com/parsehub-product-demo');return false;">Schedule a call</a></p>
+      <p><a href="terms.html">Terms</a></p>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 ph-footer-col">
+      <h6>HELP</h6>
+      <p><a href="docs/ref/api/v2/index.html">API Docs</a></p>
+      <p><a href="https://help.parsehub.com/">Tutorials</a></p>
+      <p><a href="https://help.parsehub.com/hc/en-us/categories/202725858-Videos">Videos</a></p>
+      <p><a href="https://help.parsehub.com/hc/en-us/sections/203974597-FAQ">FAQ</a></p>
+      <p><a href="https://groups.google.com/forum/#!forum/webscraping">Q&A Forum</a></p>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 ph-footer-col">
+      <h6>EXAMPLES</h6>
+      <p><a href="web-scraping-for-developers.html">Developers</a></p>
+      <p><a href="web-scraping-for-data-science.html">Data Science</a></p>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-3 ph-col-xs-1 footer-col">
+    </div>
+  </div>
+  <div class="row text-center">
+    <p class="footer-copyright"><a class="muted credit">&copy; 2015-2019 Parsehub.com</a></p>
+  </div>
+</div>
+
+    </div>
+  
+  
+    
+<!-- begin intercom code: https://app.intercom.io/a/apps/dcrnas79/guide/web_integration/ -->
+<div id="phintercom">
+</div>
+
+    <script>
+          window.intercomSettings = {app_id: "dcrnas79"};
+    </script>
+    <script>
+        (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/dcrnas79';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+    </script>
+    <!-- end intercom code -->
+    <script>
+      Intercom('onShow', function() {
+        document.getElementById('phintercom').className = 'ph-intercom-open';
+      });
+      Intercom('onHide', function() {
+        document.getElementById('phintercom').className = '';
+      });
+    </script>
+
+    
+<div class="democallbook"
+     style="display: none;"
+     onclick="Calendly.showPopupWidget('https://calendly.com/parsehub-product-demo');return false;">
+    <span class="democallbook-inner">
+      Book a demo
+    </span>
+</div>
+
+  
+</body>
+
+<!-- Mirrored from www.parsehub.com/pricing by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 Mar 2019 02:12:25 GMT -->
+</html>

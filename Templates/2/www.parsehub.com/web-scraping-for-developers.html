@@ -1,0 +1,610 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.parsehub.com/web-scraping-for-developers by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 Mar 2019 02:13:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+					<script type="text/javascript" src="static/js/main.js"></script>
+  
+    <meta charset="utf-8">
+    
+  <title>Web scraping for developers with ParseHub</title>
+
+    
+    <meta name="keywords"
+        content="scrapy,web scraping,web scraper,data,extraction,data mining">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="shortcut icon" href="static/images/phmini2.png"/>
+    <link type="text/css" href="static/css/main.css" rel="stylesheet"/>
+
+
+
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44399807-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  
+</head>
+<body ng-app="phApp">
+  
+  <div>
+    <nav class="navbar navbar-default" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse"
+        data-target="#example-navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a rel="home" href="index.html" title="ParseHub: Easily extract data from any website">
+      <div id="logoImage">
+      </div>
+    </a>
+  </div>
+
+  <div class="collapse navbar-collapse" id="example-navbar-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav cl-effect-3">
+        <li><a href="features.html">Features</a></li>
+        <li><a href="quickstart.html">Download</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="https://help.parsehub.com/">Help</a></li>
+        <li><a href="blog/index.html">Blog</a></li>
+        <li><a class="navbar-login" href="login.html">Log in</a></li>
+        <li>
+          <button id="btn-go-to-register" class="btn ph-btn-orange ph-btn-large"
+            style="margin-top: 5px;"
+            onclick="window.location.href='register.html'">Sign up</button>
+        </li>
+      </ul>
+    </ul>
+  </div>
+</nav>
+
+  </div>
+
+  <div class="wrapper" ng-controller="ph_ScrollToHashCtrl">
+    
+
+
+
+
+
+<div class="container-fluid">
+
+  <div class="row landing-row top minimal">
+    <div class="section-responsive">
+      <div class="col-md-12 col-lg-12 text-col">
+        <h1 class="landing-heading minimal-text">
+          Web Scraping for Developers
+        </h1>
+        <h3 class="landing-subtext minimal-text" style="padding-right: 0">Scrape online data to power your mobile and web apps</h3>
+        <div class="call-to-action-button minimal-button">
+          <a href="quickstart.html"
+            class="getting-started">Download our free app</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row doc-api-ex-row text center">
+    <div class="section-responsive">
+      <div class="col-md-8">
+        <img class="screenshot" src="static/images/window_parsehub.png"/>
+      </div>
+      <div class="col-md-4 text-div">
+        <h3>Click to train ParseHub's selections</h3>
+        <h4>Build web scraping projects in no time. It only takes two clicks to start teaching ParseHub to scrape anything from the web.
+        Use <a href="https://help.parsehub.com/hc/en-us/articles/220618167">XPath</a>, CSS, and Regex with ParseHub's
+        <a href="https://help.parsehub.com/hc/en-us/articles/217730198">minimalist syntax</a> to build sophisticated web scrapers.</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="row doc-api-ex-row text center odd"> <!--make this one grey-->
+     <div class="section-responsive">
+      <div class="col-md-4 text-div-2 hidden-xs hidden-sm">
+        <h3>Deliver data with ParseHub's API</h3>
+        <h4>Make calls to start runs and access what you extract with an API designed around REST.
+        Use ParseHub in any design with
+        <a href="docs/ref/api/v2/index23ee.html?python#get-a-project">python</a>,
+        <a href="docs/ref/api/v2/index58e5.html?ruby#get-a-project">ruby</a>,
+        <a href="docs/ref/api/v2/indexe1bf.html?php#get-a-project">php</a>,
+        <a href="docs/ref/api/v2/index36c4.html?node#get-a-project">node</a>, or
+        <a href="docs/ref/api/v2/index34d1.html?go#get-a-project">go</a>.</h4>
+      </div>
+      <div class="col-md-8">
+        <img class="screenshot" src="static/images/window_api.png"/>
+      </div>
+      <div class="col-md-4 text-div visible-xs visible-sm">
+        <h3>Deliver data with ParseHub's API</h3>
+        <h4>Make calls to start runs and access what you extract with an API designed around REST.
+        Use ParseHub in any design with
+        <a href="docs/ref/api/v2/index23ee.html?python#get-a-project">python</a>,
+        <a href="docs/ref/api/v2/index58e5.html?ruby#get-a-project">ruby</a>,
+        <a href="docs/ref/api/v2/indexe1bf.html?php#get-a-project">php</a>,
+        <a href="docs/ref/api/v2/index36c4.html?node#get-a-project">node</a>, or
+        <a href="docs/ref/api/v2/index34d1.html?go#get-a-project">go</a>.</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="row doc-api-ex-row text center">
+    <div class="section-responsive">
+      <div class="col-md-8">
+        <img class="screenshot" src="static/images/window_app.png"/>
+      </div>
+      <div class="col-md-4 text-div">
+        <h3>Speed up development with web scraping</h3>
+        <h4>Use data in JSON or CSV format downloaded from the ParseHub app or API to get
+        the data you need to design for the modern web. Anything you can find online can
+        be scraped with ParseHub, including
+        <a href="blog/mining-tweets-for-sentiment-analysis-part-1/index.html">tweets</a>,
+        <a href="https://help.parsehub.com/hc/en-us/articles/221197507-Scrape-product-details-on-an-eCommerce-site">eCommerce data</a> or 
+        <a href="https://help.parsehub.com/hc/en-us/articles/115000633128-Scrape-leads-contact-information-from-directories-email-address-phone-number-etc-">sales leads</a> .</h4>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row api-code-row-selector text center hidden-xs hidden-sm top-api">
+    <h1 class="underlined grey">Flexible API integration for web scraping</h1>
+  </div>
+  <div class="row api-code-row-selector hidden-xs hidden-sm bottom-api">
+
+    <h2></h2>
+
+    <div class="col-md-3"></div>
+
+    <div class="col-md-1 code-selector curl-selector">
+      <h4>curl</h4>
+    </div>
+    <div class="col-md-1 code-selector python-selector active">
+      <h4>python</h4>
+    </div>
+    <div class="col-md-1 code-selector ruby-selector">
+      <h4>ruby</h4>
+    </div>
+    <div class="col-md-1 code-selector php-selector">
+      <h4>php</h4>
+    </div>
+    <div class="col-md-1 code-selector node-selector">
+      <h4>node</h4>
+    </div>
+    <div class="col-md-1 code-selector go-selector">
+      <h4>go</h4>
+    </div>
+    <div class="col-md-3"></div>
+
+
+    <div class="row api-code-row-code curl-code">
+      <div class="col-md-12 code-snippet">
+        <span class="w">curl -X GET "https://www.parsehub.com/api/v2/runs/{RUN_TOKEN}/data?api_key=</span><span class="o">{API_KEY}</span><span class="g">&format=csv" | gunzip</span>
+      </div>
+    </div>
+    <div class="row api-code-row-code python-code active">
+      <div class="col-md-12 code-snippet">
+        <span class="b">import</span><span class="o"> requests</span><br>
+        <br>
+        <span class="w">params = {</span><br>
+          <span class="g">&nbsp;&nbsp;"api_key"</span><span class="w">: </span><span class="g">"</span><span class="o">{API_KEY}</span><span class="g">"</span><br><span class="w">}</span><br>
+        <span class="w">r = requests.get(</span><span class="g">'https://www.parsehub.com/api/v2/runs/</span><span class="o">{RUN_TOKEN}</span><span class="g">'</span><span class="w">, params=params)</span><br>
+        <span class="b">print</span><span class="w">(r.text)</span>
+      </div>
+    </div>
+    <div class="row api-code-row-code ruby-code">
+      <div class="col-md-12 code-snippet">
+        <span class="w">require </span><span class="g">'net/http'</span><br>
+        <br>
+        <span class="w">params = {</span><br>
+          <span class="g">&nbsp;&nbsp;:api_key</span><span class="w"> => </span><span class="g">"</span><span class="o">{API_KEY}</span><span class="g">"</span><br>
+        <span class="w">}</span><br>
+        <span class="w">url = </span><span class="o">URI</span><span class="w">.parse(</span><span class="g">'https://www.parsehub.com/api/v2/runs/</span><span class="o">{RUN_TOKEN}</span><span class="g">'</span><span class="w">)</span><br>
+        <span class="w">url.query =</span><span class="o"> URI</span><span class="w">.encode_www_form(params)</span><br>
+        <br>
+        <span class="w">puts</span><span class="o"> Net</span><span class="w">::</span><span class="o">HTTP</span><span class="w">.get(url)</span>
+      </div>
+    </div>
+    <div class="row api-code-row-code php-code">
+      <div class="col-md-12 code-snippet">
+        <span class="o"><</span><span class="o">?</span><span class="o">php</span><br>
+        <span class="w">$params = http_build_query(</span><span class="b">array</span><span class="w">(</span><br>
+        <span class="g">&nbsp;&nbsp;"api_key" </span><span class="w">=></span><span class="g"> "</span><span class="o">{API_KEY}</span><span class="g">"</span><br>
+        <span class="w">));</span><br>
+        <br>
+        <span class="w">$result = file_get_contents(</span><br>
+        <br>
+        <span class="g">'https://www.parsehub.com/api/v2/runs/</span><span class="o">{RUN_TOKEN}</span><span class="g">?'</span><span class="w">.$params,</span><br>
+        <span class="o">&nbsp;&nbsp;false</span><span class="w">,</span><br>
+        <span class="w">&nbsp;&nbsp;stream_context_create(</span><span class="b">array</span><span class="w">(</span><br>
+        <span class="g">&nbsp;&nbsp;&nbsp;&nbsp;'http' </span><span class="w">=></span><span class="b"> array</span><span class="w">(</span><br>
+        <span class="g">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'method' </span><span class="w">=></span><span class="g"> 'GET'</span><br>
+          <span class="w">&nbsp;&nbsp;&nbsp;&nbsp;)</span><br>
+        <span class="w">&nbsp;&nbsp;))</span><br>
+        <span class="w">);</span><br>
+        <span class="b">echo</span><span class="w">($result);</span><br>
+        <span class="o">?></span><br>
+      </div>
+    </div>
+    <div class="row api-code-row-code node-code">
+      <div class="col-md-12 code-snippet">
+        <span class="o">var </span><span class="w">request = require(</span><span class="g">'request'</span><span class="w">);</span><br>
+        <br>
+        <span class="w">request({</span><br>
+        <span class="b">&nbsp;&nbsp;uri</span><span class="w">: </span><span class="g">'https://www.parsehub.com/api/v2/runs/{RUN_TOKEN}'</span><span class="w">,</span><br>
+          <span class="b">&nbsp;&nbsp;method</span><span class="w">:</span> <span class="g">'GET'</span><span class="w">,</span><br>
+          <span class="b">&nbsp;&nbsp;qs</span><span class="w">: {</span><br>
+          <span class="b">&nbsp;&nbsp;&nbsp;&nbsp;api_key</span><span class="w">: </span><span class="g">"</span><span class="o">{API_KEY}</span><span class="g">"</span><span class="w">,</span><br>
+          <span class="w">&nbsp;&nbsp;}</span><br>
+        <span class="w">}, </span><span class="o">function</span><span class="w">(err, resp, body) {</span><br>
+          <span class="w">&nbsp;&nbsp;console.log(body);</span><br>
+        <span class="w">});</span>
+      </div>
+    </div>
+    <div class="row api-code-row-code go-code">
+      <div class="col-md-12 code-snippet">
+        <span class="b">package</span><span class="w"> main</span><br>
+        <br>
+        <span class="b">import</span><span class="w"> (</span><br>
+        <span class="g">&nbsp;&nbsp;"fmt"</span><br>
+        <span class="g">&nbsp;&nbsp;"io/ioutil"</span><br>
+        <span class="g">&nbsp;&nbsp;"net/http"</span><br>
+        <span class="g">&nbsp;&nbsp;"net/url"</span><br>
+        <span class="w">)</span><br>
+        <br>
+        <span class="b">func</span><span class="w"> main() {</span><br>
+        <span class="b">&nbsp;&nbsp;var</span><span class="w"> Url * url.URL</span><br>
+        <span class="w">&nbsp;&nbsp;Url, _ = url.Parse(</span><span class="g">"https://www.parsehub.com/api/v2/runs/</span><span class="o">{RUN_TOKEN}</span><span class="g">"</span><span class="w">)</span><br>
+        <br>
+        <span class="w">&nbsp;&nbsp;params := url.Values{}</span><br>
+        <span class="w">&nbsp;&nbsp;params.Add(</span><span class="g">"api_key"</span><span class="w">, </span><span class="g">"</span><span class="o">{API_KEY}</span><span class="g">"</span><span class="w">)</span><br>
+        <span class="w">&nbsp;&nbsp;Url.RawQuery = params.Encode()</span><br>
+        <br>
+        <span class="w">&nbsp;&nbsp;resp, _ := http.Get(Url.String())</span><br>
+        <span class="b">&nbsp;&nbsp;defer</span><span class="w"> resp.Body.Close()</span><br>
+        <span class="w">&nbsp;&nbsp;body, _ := ioutil.ReadAll(resp.Body)</span><br>
+        <span class="w">&nbsp;&nbsp;fmt.Printf(</span><span class="o">string</span><span class="w">(body))</span><br>
+        <span class="w">}</span>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function(){
+        $(".curl-selector").click(function(){
+          $(".api-code-row-code.active").removeClass("active");
+          $(".code-selector.active").removeClass("active");
+          $(".curl-code").addClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function(){
+        $(".python-selector").click(function(){
+          $(".api-code-row-code.active").removeClass("active");
+          $(".code-selector.active").removeClass("active");
+          $(".python-code").addClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function(){
+        $(".ruby-selector").click(function(){
+          $(".api-code-row-code.active").removeClass("active");
+          $(".code-selector.active").removeClass("active");
+          $(".ruby-code").addClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function(){
+        $(".php-selector").click(function(){
+          $(".api-code-row-code.active").removeClass("active");
+          $(".code-selector.active").removeClass("active");
+          $(".php-code").addClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function(){
+        $(".go-selector").click(function(){
+          $(".api-code-row-code.active").removeClass("active");
+          $(".code-selector.active").removeClass("active");
+          $(".go-code").addClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function(){
+        $(".node-selector").click(function(){
+          $(".api-code-row-code.active").removeClass("active");
+          $(".code-selector.active").removeClass("active");
+          $(".node-code").addClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </div>
+
+  <div class="row feature-row icons-row green text-center">
+    <div class="landing-page-responsive">
+      <h1 class="underlined green">Web scraping features for any project</h1>
+      <div class="col-md-2">
+        <i class="landing-icon green-full fa fa-magic fa-2x"></i>
+        <h3>XPath/CSS</h3>
+        <p>ParseHub lets you use XPath and CSS selectors to grab the data you need.</p>
+      </div>
+      <div class="col-md-2">
+        <i class="landing-icon green-full fa fa-cogs fa-2x"></i>
+        <h3>API Integration</h3>
+        <p>Connect any web data into your web databases and mobile apps with our API.</p>
+      </div>
+      <div class="col-md-2">
+        <i class="landing-icon green-full fa fa-code fa-2x"></i>
+        <h3>Regular Expressions</h3>
+        <p>Use Regular Expressions to only extract data you need.</p>
+      </div>
+      <div class="col-md-2">
+        <i class="landing-icon green-full fa fa-cloud fa-2x"></i>
+        <h3>Cloud-Based</h3>
+        <p>Collect your data on ParseHub's servers. No maintenance required.</p>
+      </div>
+      <div class="col-md-2">
+        <i class="landing-icon green-full fa fa-calendar fa-2x"></i>
+        <h3>Scheduled Runs</h3>
+        <p>Use ParseHub's scheduling feature to get a refresh of data as often as you need.</p>
+      </div>
+      <div class="col-md-2">
+        <i class="landing-icon green-full fa fa-repeat fa-2x"></i>
+        <h3>IP Rotation</h3>
+        <p>Use ParseHub's fleet of proxies to get around sites with IP blockers.</p>
+      </div>
+      <div class="col-md-12">
+        <a href="features.html" class="btn btn-big green-full dark-hover">Explore more features</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row feature-row text-center">
+    <div class="landing-page-responsive">
+      <section class="heading-large">
+       <h1 class="underlined grey">Create custom APIs from data on any website</h1>
+      </section>
+      <div class="row">
+        <div class="col-sm-6 col-md-6 icon-feature">
+          <div class="row">
+            <div class="col-md-2 col-md-offset-1">
+              <i class="fa fa-keyboard-o fa-5x reasons" aria-hidden="true"></i>
+            </div>
+            <div class="col-md-8">
+              <h3 class="blue">Interactive</h3>
+              <p class="grey reasons"><i class="fa fa-angle-right"></i> Instead of building web scrapers from
+              scratch to get data from interactive elements – use ParseHub instead.</p>
+              <p class="grey reasons"><i class="fa fa-angle-right"></i> ParseHub can scrape AJAX, JavaScript,
+              infinite scroll, pagination, drop-downs, log-ins and other dynamic elements that simple scrapers can't.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 icon-feature">
+          <div class="row">
+            <div class="col-md-2 col-md-offset-1">
+              <i class="fa fa-file-code-o fa-5x reasons" aria-hidden="true"></i>
+            </div>
+            <div class="col-md-8">
+              <h3 class="blue">Flexible</h3>
+              <p class="grey reasons"><i class="fa fa-angle-right"></i> Our point-and-click graphic interface
+              gets you data in seconds. Combine advanced features to get data from complex websites.</p>
+              <p class="grey reasons"><i class="fa fa-angle-right"></i> Export to CSV or JSON straight from the
+              app, or via ParseHub's API using Webhooks.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-6 icon-feature">
+          <div class="row">
+            <div class="col-md-2 col-md-offset-1">
+              <i class="fa fa-line-chart fa-5x reasons" aria-hidden="true"></i>
+            </div>
+            <div class="col-md-8">
+              <h3 class="blue">Scalable</h3>
+              <p class="grey reasons"><i class="fa fa-angle-right"></i> Get data from millions of pages easily.
+              Our infrastructure is built to scale with your data needs.</p>
+              <p class="grey reasons"><i class="fa fa-angle-right"></i> Use ParseHub for your own project with
+              a Standard plan, or for your business with custom Enterprise plans tailored to your data needs.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 icon-feature">
+          <div class="row">
+            <div class="col-md-2 col-md-offset-1">
+              <i class="fa fa-lightbulb-o fa-5x reasons" aria-hidden="true"></i>
+            </div>
+            <div class="col-md-8">
+              <h3 class="blue">Powerful</h3>
+              <p class="grey reasons"><i class="fa fa-angle-right"></i> Machine Learning lets ParseHub learn
+              about the data you want to scrape with each click.</p>
+              <p class="grey reasons"><i class="fa fa-angle-right"></i> ParseHub automatically detects AJAX buttons, inputs,
+              and similar data to what you select on the page. Start web scraping in two clicks.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row use-case-row center text continues first">
+    <h1 class="underlined blue">Build a web scraper for interactive websites</h1>
+    <div class="section-responsive">
+      <div class="col-md-5 col-md-offset-1">
+        <a href="http://help.parsehub.com/">
+          <i class="fa fa-info-circle fa-4x" aria-hidden="true"></i>
+          <h3>Help Centre</h3>
+          <h4>Documentation and tutorials for everything ParseHub, available online.</h4>
+          <h4 class="use-case-button">Start learning now
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </h4>
+        </a>
+      </div>
+      <div class="col-md-5">
+        <a href="docs/ref/api/v2/index.html" class="use-case-button">
+          <i class="fa fa-cogs fa-4x" aria-hidden="true"></i>
+          <h3>API Documentation</h3>
+          <h4>Learn how to start using data mining in your development process.</h4>
+          <h4 class="use-case-button">Start learning now
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </h4>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="row use-case-row center text continued">
+    <div class="section-responsive">
+      <div class="col-md-4">
+        <a href="blog/mining-tweets-for-sentiment-analysis-part-1/index.html">
+        <i class="fa fa-comments fa-4x" aria-hidden="true"></i>
+          <h3>Sentiment Analysis of Tweets</h3>
+          <h4>ParseHub can power textual analysis tools to get large-scale complex data on current events</h4>
+          <h4 class="use-case-button">See how it's done
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </h4>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="blog/scrape-data-from-tables-convert-currencies-to-usd-automatically/index.html">
+          <i class="fa fa-credit-card fa-4x" aria-hidden="true"></i>
+          <h3>Compare Product Prices on Amazon</h3>
+          <h4>Collect product information with web scraping for product analysis or to build an online marketplace</h4>
+          <h4 class="use-case-button">Read the tutorial
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </h4>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="https://help.parsehub.com/hc/en-us/articles/217751808-API-Tutorial-How-to-get-run-data-using-Python-Flask">
+          <i class="fa fa-file-text fa-4x" aria-hidden="true"></i>
+          <h3>Build a website with Python and Flask</h3>
+          <h4>Learn how to use Python and the Flask web framework to integrate ParseHub web scraping into your service via API</h4>
+          <h4 class="use-case-button">Build it yourself
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </h4>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row landing-page-row class-to-action-row">
+    <h2 class="call-to-action-heading mbs">
+      ParseHub will save you tons of time extracting data.
+    </h2>
+    <h4>It takes a typical developer just 12 minutes to get started.</h4>
+    <a href="quickstart.html" class="getting-started bottom">Download our free app</a>
+  </div>
+
+</div>
+
+  </div>
+  <div class="push"></div>
+  
+    <div>
+      
+<div class="ph-footer">
+  <div class="row">
+    <div class="col-lg-2 col-md-3 col-sm-3 ph-footer-col">
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 ph-footer-col">
+      <h6>COMPANY</h6>
+      <p><a href="intro.html">About</a></p>
+      <p><a href="blog/index.html">Blog</a></p>
+      <p><a href="https://twitter.com/parsehub">Twitter</a></p>
+      <p><a href="contact.html">Contact</a></p>
+      <p><a href="partners.html">Partners</a></p>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 ph-footer-col">
+      <h6>PRODUCT</h6>
+      <p><a href="quickstart.html">Download</a></p>
+      <p><a href="features.html">Features</a></p>
+      <p><a href="pricing.html">Pricing</a></p>
+      <link href="../calendly.com/assets/external/widget.css" rel="stylesheet">
+      <script src="../calendly.com/assets/external/widget.js" type="text/javascript"></script>
+      <p><a href="#" onclick="Calendly.showPopupWidget('https://calendly.com/parsehub-product-demo');return false;">Schedule a call</a></p>
+      <p><a href="terms.html">Terms</a></p>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 ph-footer-col">
+      <h6>HELP</h6>
+      <p><a href="docs/ref/api/v2/index.html">API Docs</a></p>
+      <p><a href="https://help.parsehub.com/">Tutorials</a></p>
+      <p><a href="https://help.parsehub.com/hc/en-us/categories/202725858-Videos">Videos</a></p>
+      <p><a href="https://help.parsehub.com/hc/en-us/sections/203974597-FAQ">FAQ</a></p>
+      <p><a href="https://groups.google.com/forum/#!forum/webscraping">Q&A Forum</a></p>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 ph-footer-col">
+      <h6>EXAMPLES</h6>
+      <p><a href="web-scraping-for-developers.html">Developers</a></p>
+      <p><a href="web-scraping-for-data-science.html">Data Science</a></p>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-3 ph-col-xs-1 footer-col">
+    </div>
+  </div>
+  <div class="row text-center">
+    <p class="footer-copyright"><a class="muted credit">&copy; 2015-2019 Parsehub.com</a></p>
+  </div>
+</div>
+
+    </div>
+  
+  
+    
+<!-- begin intercom code: https://app.intercom.io/a/apps/dcrnas79/guide/web_integration/ -->
+<div id="phintercom">
+</div>
+
+    <script>
+          window.intercomSettings = {app_id: "dcrnas79"};
+    </script>
+    <script>
+        (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/dcrnas79';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+    </script>
+    <!-- end intercom code -->
+    <script>
+      Intercom('onShow', function() {
+        document.getElementById('phintercom').className = 'ph-intercom-open';
+      });
+      Intercom('onHide', function() {
+        document.getElementById('phintercom').className = '';
+      });
+    </script>
+
+    
+<div class="democallbook"
+     style="display: none;"
+     onclick="Calendly.showPopupWidget('https://calendly.com/parsehub-product-demo');return false;">
+    <span class="democallbook-inner">
+      Book a demo
+    </span>
+</div>
+
+  
+</body>
+
+<!-- Mirrored from www.parsehub.com/web-scraping-for-developers by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 Mar 2019 02:14:23 GMT -->
+</html>

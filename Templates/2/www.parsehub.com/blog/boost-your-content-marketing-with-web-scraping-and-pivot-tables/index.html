@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.parsehub.com/blog/boost-your-content-marketing-with-web-scraping-and-pivot-tables/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 Mar 2019 02:24:57 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Boost your content marketing with web scraping and pivot tables</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen164c.css?v=7e189249f9" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min164c.css?v=7e189249f9" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/custom164c.css?v=7e189249f9" />
+
+     <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-44399807-1', 'auto');
+        ga('send', 'pageview');
+      </script>
+
+      <script src="http://load.sumome.com/" data-sumo-site-id="186811ae19df34811e8922e29bfc8c50f6aea07dbdad726b1233786bf819d46e" async="async"></script>
+
+    <link rel="canonical" href="index.html" />
+    <meta name="referrer" content="origin" />
+    
+    <meta property="og:site_name" content="ParseHub" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Boost your content marketing with web scraping and pivot tables" />
+    <meta property="og:description" content="We just posted a data driven analysis of how to make your post rank successfully on HackerNews, GrowthHackers and Inbound. If you are interested in running a successful content marketing strategy you might want to analyze data from your own blog or your competitors blogs. For example, you can combine" />
+    <meta property="og:url" content="https://www.parsehub.com/blog/boost-your-content-marketing-with-web-scraping-and-pivot-tables/" />
+    <meta property="og:image" content="/content/images/2016/06/growthhackers_data_part25.png" />
+    <meta property="article:published_time" content="2015-06-25T21:29:00.000Z" />
+    <meta property="article:modified_time" content="2017-08-29T06:04:17.789Z" />
+    <meta property="article:tag" content="marketing" />
+    <meta property="article:tag" content="How To Guides" />
+    <meta property="article:tag" content="Growth Hacking" />
+    <meta property="article:tag" content="ParseHub Tutorial" />
+    <meta property="article:tag" content="Excel" />
+    <meta property="article:tag" content="Business Hacks" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Boost your content marketing with web scraping and pivot tables" />
+    <meta name="twitter:description" content="We just posted a data driven analysis of how to make your post rank successfully on HackerNews, GrowthHackers and Inbound. If you are interested in running a successful content marketing strategy you might want to analyze data from your own blog or your competitors blogs. For example, you can combine" />
+    <meta name="twitter:url" content="https://www.parsehub.com/blog/boost-your-content-marketing-with-web-scraping-and-pivot-tables/" />
+    <meta name="twitter:image:src" content="/content/images/2016/06/growthhackers_data_part25.png" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Angelina Fomina" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="marketing, How To Guides, Growth Hacking, ParseHub Tutorial, Excel, Business Hacks" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "ParseHub",
+        "logo": "https://www.parsehub.com/blog/ghost/img/ghosticon.jpg"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Angelina Fomina",
+        "image": "https://www.parsehub.com/blog/content/images/2016/06/angie.jpg",
+        "url": "https://www.parsehub.com/blog/author/angelina/",
+        "sameAs": [],
+        "description": "Angelina is a co-founder of ParseHub - making online data accessible to all through a super nifty, powerful scraping tool. She creates ink illustrations, hikes and rock climbs in here spare time."
+    },
+    "headline": "Boost your content marketing with web scraping and pivot tables",
+    "url": "https://www.parsehub.com/blog/boost-your-content-marketing-with-web-scraping-and-pivot-tables/",
+    "datePublished": "2015-06-25T21:29:00.000Z",
+    "dateModified": "2017-08-29T06:04:17.789Z",
+    "image": "/content/images/2016/06/growthhackers_data_part25.png",
+    "keywords": "marketing, How To Guides, Growth Hacking, ParseHub Tutorial, Excel, Business Hacks",
+    "description": "We just posted a data driven analysis of how to make your post rank successfully on HackerNews, GrowthHackers and Inbound. If you are interested in running a successful content marketing strategy you might want to analyze data from your own blog or your competitors blogs. For example, you can combine"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.8" />
+    <link rel="alternate" type="application/rss+xml" title="ParseHub" href="../rss/index.html" />
+</head>
+<body class="post-template tag-marketing tag-how-to-guides tag-growth-hacking tag-parsehub-tutorial tag-excel tag-business-hacks">
+
+    <nav class="navbar navbar-default" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse"
+        data-target="#example-navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <span>
+      <a rel="home" href="../../index.html"
+        title="ParseHub - scrape data from interactive websites">
+        <img src="../../static/images/parsehub_logo2.svg"
+            height="33px"
+            style="margin-top:17px"/>
+      </a>
+    </span>
+  </div>
+  <div class="collapse navbar-collapse" id="example-navbar-collapse">
+    <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav">
+        <li><a href="../index.html">Blog</a></li>
+        <li class="blog_header_accent"><a href="../tag/how-to-guides/index.html">Guides</a></li>
+        <li><a href="../tag/data-fun/index.html">Data Fun</a></li>
+        <li><a href="../tag/business-hacks/index.html">Business Hacks</a></li>
+        <li><a href="../tag/how-to-guides/index.html">Developers</a></li>
+        <li><a href="../tag/start-up-journey/index.html">Start-up Journey</a></li>
+        <li><a href="../tag/product-updates/index.html">Product Updates</a></li>
+      </ul>
+    </ul>
+  </div>
+</nav>
+    <div class="site-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            
+
+
+<main class="content" role="main">
+    <article class="post tag-marketing tag-how-to-guides tag-growth-hacking tag-parsehub-tutorial tag-excel tag-business-hacks">
+
+        <header class="post-header">
+            <h1 class="post-title">Boost your content marketing with web scraping and pivot tables</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2015-06-25">25 June 2015</time>  on <a href="../tag/marketing/index.html">marketing</a>, <a href="../tag/how-to-guides/index.html">How To Guides</a>, <a href="../tag/growth-hacking/index.html">Growth Hacking</a>, <a href="../tag/parsehub-tutorial/index.html">ParseHub Tutorial</a>, <a href="../tag/excel/index.html">Excel</a>, <a href="../tag/business-hacks/index.html">Business Hacks</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>We just posted a data driven analysis of how to make your post rank successfully on HackerNews, GrowthHackers and Inbound. If you are interested in running a successful content marketing strategy you might want to analyze data from your own blog or your competitors blogs. For example, you can combine the social shares, word count, title length, pageviews and url structure of all of the posts on your blog to get an accurate picture of what works and what doesn’t.</p>
+
+<p>In this post I will show you how to:</p>
+
+<ul>
+<li>Part I - Use ParseHub to scrape posts from a forum</li>
+<li>Part II - Clean up and prepare the results scraped by ParseHub in Excel</li>
+<li>Part III - Use pivot tables to organize, analyze and sort your data to find key insights</li>
+</ul>
+
+<p>We applied all of the steps in this tutorial when analyzing <a href="http://blog.parsehub.com//2015/how-you-can-rank-on-the-first-page-of-hackernews-and-growthhackers/">what makes a successful post on HackerNews, GrowthHackers and Inbound</a>. Check it out to get some ideas on how you can use web scraping for marketing.</p>
+
+<h1 id="1usingparsehubtoscrapepostsfromaforum">1. Using ParseHub to scrape posts from a forum</h1>
+
+<p>Here is the data that we want to get from GrowthHackers:</p>
+
+<ul>
+<li>post title</li>
+<li>title word count</li>
+<li>website the post came from</li>
+<li>upvotes</li>
+<li>comments</li>
+<li>author</li>
+<li>category</li>
+<li>link</li>
+</ul>
+
+<p>Let's set-up ParseHub to crawl GrowthHackers and get this data.</p>
+
+<ol>
+<li><p>Download the <a href="../../quickstart.html">ParseHub desktop application</a>, open it and log-in.</p></li>
+<li><p>Enter the following url in your browser <strong><a href="https://growthhackers.com/page/2/">https://growthhackers.com/page/2/</a></strong> - click <br />
+<strong>New Project</strong> and <strong>Start project on this URL</strong>.</p></li>
+<li><p>Select the first two posts by clicking on them. All of the posts on the page will now be <a href="https://help.parsehub.com/hc/en-us/articles/217753378-Select">selected</a> and <a href="https://help.parsehub.com/hc/en-us/articles/218226137-Extract">extracted</a> for you.</p></li>
+<li><p>Rename the selection <strong>posts</strong>.</p>
+
+<p><img src="../content/images/2016/07/growthhackers_data_part1.png"   alt="How to rank on forums"   class="img-responsive" width="700px"/></p></li>
+<li><p>Add a third Extract command by clicking on the <a href="https://help.parsehub.com/hc/en-us/articles/220053907-Where-is-the-Plus-Button-">"plus" button</a> next to the command "Begin new entry in <strong>posts</strong> and opening the Advanced menu.  </p></li>
+<li>Rename the command “Extract <strong>title_length</strong>”.  </li>
+<li><p>In the text box, add the following:</p>
+
+<p><em><strong>$e.text.split(' ').length</strong></em></p>
+
+<p>ParseHub will automatically count how many words are in each title for you and extract it into your results. Now you don’t have to use Excel formulas to get this data.</p>
+
+<p><img src="../content/images/2016/07/growthhackers_data_part2.png"   alt="How to rank on forums"   class="img-responsive" width="700px"/></p></li>
+<li><p>Add a Relative Select command by clicking on the "plus" button next to "Begin new entry in <strong>posts</strong>".  </p></li>
+<li>Click on the first post title and click on the name of the source to draw an arrow between them. All of the sources for all of the posts are now selected and extracted for you.  </li>
+<li><p>Rename the selection <strong>source</strong>.</p>
+
+<p><img src="../content/images/2016/07/growthhackers_data_part5.png"   alt="How to rank on forums"   class="img-responsive" width="700px"/></p></li>
+<li>Add another Relative Select command.  </li>
+<li><p>Click on the first post, then click on the number of comments. Rename the selection <strong>comments</strong>.</p>
+
+<p><img src="../content/images/2016/07/growthhackers_data_part6.png"   alt="How to rank on forums"   class="img-responsive" width="700px"/></p></li>
+<li>Add another Relative Select command to select and extract the number of upvotes that it has. I also added Relative Select commands to select the time it was posted, and the link author to the author's page.</li>
+</ol>
+
+<p><img src="../content/images/2016/07/growthhackers_data_part8.png"   alt="How to rank on forums"   class="img-responsive" width="700px"/></p>
+
+<h2 id="loadingmorepostsusingparsehub">Loading more posts using ParseHub</h2>
+
+<ol>
+<li>I will travel to the next page to find more stories. This will happen indefinitely if I do not tell ParseHub to stop somewhere, though! Click on the the "plus" button next to the "Select page" command to choose a <a href="https://help.parsehub.com/hc/en-us/articles/217753268-Conditional">Conditional</a> command.  </li>
+<li>In the Expression text box, enter: <br />
+<code>posts.length &lt; 300</code></li>
+<li>Now scroll down until you see the “More Posts” button.  </li>
+<li>Click on the  "plus" button next to "If <strong>posts.length &lt; 300</strong> and add a Select command.  </li>
+<li>Click on the "More Posts" button and rename the selection <strong>more</strong>.  </li>
+<li>Add a Click command from the "plus" button next to "Select and Extract <strong>more</strong>", to tell ParseHub to click on the “More Posts” button.  </li>
+<li><p>Say that you would to Go to Existing Template <strong>main_template</strong>.</p>
+
+<p><img src="../content/images/2016/07/growthhackers_data_part10.png"   alt="How to rank on forums"   class="img-responsive" width="700px"/></p></li>
+</ol>
+
+<h2 id="extractingdatawithparsehub">Extracting data with ParseHub</h2>
+
+<ol>
+<li>It's time! Click on <strong>Get Data</strong>.  </li>
+<li>Choose to <strong>Run</strong> and <strong>Save and Run</strong>. This will run the project and get the last 300 posts from GrowthHackers.  </li>
+<li>To download your data, wait a few minutes for the project to finish running. You will see buttons to download the CSV or JSON of your results.</li>
+</ol>
+
+<p><img src="../content/images/2016/06/growthhackers_data_part12.png"   alt="How to rank on forums"   class="img-responsive" width="300px"/></p>
+
+<p><strong>OPTIONAL:</strong> If you want to run the same project on a schedule and get data from GrowthHackers at the beginning of every month you can use our scheduling feature. This way you will be able to combine data about posts from many months together.</p>
+
+<ol>
+<li>To schedule your crawls, under <strong>Get Data</strong> click on <strong>Schedule</strong>.  </li>
+<li><p>Now select choose to schedule <strong>Every month on 1 at 0:0</strong> to extract your data at midnight of the first of every month.</p>
+
+<p><img src="../content/images/2016/06/growthhacker_data_part14.png"   alt="How to rank on forums"   class="img-responsive" width="350px"/></p></li>
+</ol>
+
+<h1 id="3cleanupandprepareyourdatainexcel">3. Clean up and prepare your data in Excel</h1>
+
+<p>I have Excel 2011 for Mac so that is what I will use for the tutorial screenshots and formulas - however, you can do everything I do in Windows Excel - just check out this <a href="http://www.excel-easy.com/data-analysis/pivot-tables.html">Excel tutorial</a>.</p>
+
+<p>Make sure you have the results downloaded and opened in Excel.</p>
+
+<p><img src="../content/images/2016/06/growthhackers_data_part14.png"   alt="How to rank on forums"   class="img-responsive" width="600px"/></p>
+
+<p>I like to rename and save a version of the results. Also, I clean up the headings and <br />
+rename “post<em>title” to “title”,  “post</em>upvotes” to “upvotes” and etc.</p>
+
+<h2 id="step1removeduplicates">Step 1: Remove Duplicates</h2>
+
+<ol>
+<li>Select all of the data by clicking on the left corner of the border between the label for row 1 and column A.  </li>
+<li>Click on the <strong>Data</strong> tab. Under the tools label, click on the <strong>Remove Duplicates</strong> icon.  </li>
+<li>A pop-up will appear. Now click on <strong>Remove Duplicates</strong> again.</li>
+</ol>
+
+<p><img src="../content/images/2016/06/growthhackers_data_part18.png"   alt="How to rank on forums"   class="img-responsive" width="600px"/></p>
+
+<h2 id="step2addupthetotalengagementforeachpost">Step 2: Add up the total engagement for each post</h2>
+
+<p>Create a new column beside <strong>post_upvotes</strong> and rename it <strong>engagement</strong>. Now add up the post comments and upvotes. We will use post engagement as a benchmark for which posts are outperforming each other.</p>
+
+<p><strong>=E2+F2</strong></p>
+
+<p><img src="../content/images/2016/06/growthhackers_data_part15.png"   alt="How to rank on forums"   class="img-responsive" width="700px"/></p>
+
+<h2 id="step3findthedayeachpostispublished">Step 3: Find the day each post is published</h2>
+
+<p>Create a new column beside <strong>date</strong> and rename it <strong>day</strong>. Now enter the following formula into the cell. <strong>J2</strong> represents the cell where you have the date - <strong>11-Jun-15</strong>. If you your date value is in another column make sure to change this part of the formula.</p>
+
+<p><strong>=TEXT(J2,"DDDD")</strong></p>
+
+<p><img src="../content/images/2016/06/growthhackers_data_part16.png"   alt="How to rank on forums"   class="img-responsive" width="700px"/></p>
+
+<h2 id="step4analyzetheposttitles">Step 4: Analyze the post titles</h2>
+
+<p>There are a few things you can do to see what works in the title or not. Here are just a few:</p>
+
+<ul>
+<li>Find out if the titles with a number in them perform better. Create a new column and rename it <strong>has_number</strong>. Use the formula below and make sure to replace <strong>A2</strong> if your title is in a different column.</li>
+</ul>
+
+<p><strong>=IF(COUNT(FIND({0,1,2,3,4,5,6,7,8,9},A2))>0, "Yes", "No")</strong></p>
+
+<ul>
+<li>See if titles with a dollar sign or a colon perform better. Use the two formulas below in separate columns</li>
+</ul>
+
+<p><strong>=IF(ISNUMBER(SEARCH("$",A2)),"Yes", "No")</strong></p>
+
+<p><strong>=IF(ISNUMBER(SEARCH(":",A2)),"Yes", "No")</strong></p>
+
+<ul>
+<li>Find out the most popular first word of top trending post. Make a column and rename it <strong>first_word</strong>. Enter the formula below into a cell.</li>
+</ul>
+
+<p><strong>=LEFT(A2,SEARCH(" ",A2)-1)</strong></p>
+
+<ul>
+<li>Here is a different way to find the title length in Excel. Remember - we did this in ParseHub. But it you want to use an Excel formula to count the number of words in each title, here it is:</li>
+</ul>
+
+<p><strong>=IF(LEN(TRIM(A2))=0,0,LEN(TRIM(A2))-LEN(SUBSTITUTE(A2," ",""))+1)</strong></p>
+
+<p><img src="../content/images/2016/06/growthhackers_data_part17.png"   alt="How to rank on forums"   class="img-responsive" width="700px"/></p>
+
+<h1 id="3usepivottablestoanalyzeyourdata">3. Use pivot tables to analyze your data</h1>
+
+<p>You might be wondering, how do I create a pivot table in Excel to get the most of my data? Keep reading and I will show you how to analyze which day is the best to post your content and how many words you should make your title.</p>
+
+<h2 id="whatdayisthebesttopostcontent">What day is the best to post content?</h2>
+
+<p>Let's create a pivot table to analyze all of the posts in our excel sheet. We will be able to compare each day of the week to the average amount of comments and upvotes each post gets.</p>
+
+<h3 id="step1createyourpivottable">Step 1: Create your pivot table</h3>
+
+<p>Select the entire sheet of data. Click on the <strong>Data</strong> tab and find and click on the <strong>Pivot Table</strong> icon. Excel will automatically create a new sheet for you with an example pivot table.</p>
+
+<p><img src="../content/images/2016/06/growthhackers_data_part19.png"   alt="How to rank on forums"   class="img-responsive" width="600px"/></p>
+
+<h3 id="step2organizeyourdatapoints">Step 2: Organize your data points</h3>
+
+<p>You will see a pivot table builder pop-up. Let’s drag and drop the values based on the data we want to analyze.</p>
+
+<p>Let’s see if posting on a specific day creates more upvotes and comments and total engagement. Since we want to organize the data by days, we want to use the day to define our row label. Just drag and drop the <strong>day</strong> to the <strong>Row Labels</strong> box. Now drag the <strong>upvotes</strong>, <strong>comments</strong> and <strong>engagement</strong> into the <strong>Values</strong> box. <strong>Count of title</strong> will automatically appear for us.</p>
+
+<p><img src="../content/images/2016/06/growthhackers_data_part20.png"   alt="How to rank on forums"   class="img-responsive" width="600px"/></p>
+
+<p>Let’s get the average upvotes, comments and engagement for all of the posts, posted on a specific day. To do this, click on the <strong>i</strong> symbol beside the <strong>Count of upvotes</strong>, <strong>Count of comments</strong> and <strong>Count of engagement</strong>. In the pop-up select <strong>Average</strong> from the scroll box and click ok.</p>
+
+<p><img src="../content/images/2016/06/growthhackers_data_part21.png"   alt="How to rank on forums"   class="img-responsive" width="400px"/></p>
+
+<h3 id="step3sortandanalyzeyourresults">Step 3: Sort and analyze your results</h3>
+
+<p>Sort the days in the pivot table from the greatest engagement to the least engagement. Click on any row under the “engagement” column and select the <strong>data</strong> tab. Now click on the <strong>sort</strong> icon in the left corner and select <strong>descending</strong> from the dropdown.</p>
+
+<p><img src="../content/images/2016/06/growthhackers_data_part22.png"   alt="How to rank on forums"   class="img-responsive" width="600px"/></p>
+
+<p>In this example, from the 275 posts that we are analyzing, Monday has the highest engagement per post. Saturday is not a very popular day to post but yields a similar engagement per post as Monday. As you can see below, Sunday and Saturday have a similar amount of posts but Sunday is the worst day to post and has almost half as many comments and upvotes as Saturday. So, if you had to pick - post on Saturday instead of Sunday.</p>
+
+<h2 id="doesthewordcountofthetitlematter">Does the word count of the title matter?</h2>
+
+<p>You can repeat similar steps to above to analyze if the title length influencers the number of comments and upvotes.</p>
+
+<h3 id="step1createyourpivottableandorganizeyourdata">Step 1: Create your pivot table and organize your data</h3>
+
+<p>Drag and drop <strong>title_length</strong> into the <strong>Row Labels” text box. Drag and drop **engagement</strong>, <br />
+<strong>upvotes</strong> and <strong>comments</strong> into the <strong>Values</strong> text box.</p>
+
+<p>Click on the <strong>i</strong> symbol and select the <strong>Average</strong> from the scroll box for <strong>engagement</strong>, <strong>upvotes</strong> and <strong>comments</strong>.</p>
+
+<p><img src="../content/images/2016/06/growthhackers_data_part23.png"   alt="How to rank on forums"   class="img-responsive" width="600px"/></p>
+
+<h3 id="step2sortandanalyzeyourresults">Step 2: Sort and analyze your results</h3>
+
+<p>Sort the <strong>Count of titles</strong> to eliminate outliers from our results - remove the title word count that only contains 1 or 2 posts. Click on the little icon beside the <strong>Row Labels</strong> column heading and uncheck all of the checkboxes for word counts 19 and up.</p>
+
+<p><img src="../content/images/2016/06/growthhackers_data_part24.png"   alt="How to rank on forums"   class="img-responsive" width="600px"/></p>
+
+<p>Select any cell under the <strong>Average engagement</strong> heading and open the <strong>Data</strong> tab. Now click on the <strong>Sort</strong> icon and select <strong>Descending</strong> from the dropdown. If you want the most engagement on your posts aim for between 11 and 15 words in your title.</p>
+
+<p><img src="../content/images/2016/06/growthhackers_data_part25.png"   alt="How to rank on forums"   class="img-responsive" width="600px"/></p>
+
+<p>Of course you can keep going to analyze the rest of the data. We scraped posts from forums such as HackerNews, GrowthHackers and Inbound.org and used Excel and pivot tables to analyze exactly what you need to do to get your post to rank on the first page.</p>
+
+<p>Happy data-hunting!</p>
+        </section>
+
+        <footer class="post-footer row">
+
+
+            <div class="col-lg-2">
+                <figure class="author-image">
+                    <a class="img" href="../author/angelina/index.html" style="background-image: url(../content/images/2016/06/angie.jpg)"><span class="hidden">Angelina Fomina's Picture</span></a>
+                </figure>
+            </div>
+
+            <div class="col-lg-6">
+              <section class="author">
+                  <h4><a href="../author/angelina/index.html">Angelina Fomina</a></h4>
+
+                      <p>Angelina is a co-founder of ParseHub - making online data accessible to all through a super nifty, powerful scraping tool. She creates ink illustrations, hikes and rock climbs in here spare time.</p>
+                  <div class="author-meta">
+                      
+                      
+                  </div>
+              </section>
+            </div>
+
+
+            <div class="col-lg-4">
+              <section class="share">
+                  <h4>Share this post</h4>
+                  <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Boost%20your%20content%20marketing%20with%20web%20scraping%20and%20pivot%20tables&amp;url=https://www.parsehub.com/blog/boost-your-content-marketing-with-web-scraping-and-pivot-tables/"
+                      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                      <span class="hidden">Twitter</span>
+                  </a>
+                  <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.parsehub.com/blog/boost-your-content-marketing-with-web-scraping-and-pivot-tables/"
+                      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                      <span class="hidden">Facebook</span>
+                  </a>
+                  <a class="icon-google-plus" href="https://plus.google.com/share?url=https://www.parsehub.com/blog/boost-your-content-marketing-with-web-scraping-and-pivot-tables/"
+                     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                      <span class="hidden">Google+</span>
+                  </a>
+              </section>
+            </div>
+
+
+        </footer>
+
+    <div id="disqus_thread"></div>
+    <script>
+      /**
+      * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+      */
+      var disqus_config = function () {
+      this.page.url = 'index.html'
+      this.page.identifier = 'ghost-33'; 
+      };
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+
+      s.src = '../../../parsehub.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+  </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story " style="background-image: url(../../content/images/2016/06/webscraping_ecommerce_part3.html)" href="../nousdecor-uses-parsehub-to-find-beautiful-interior-decor/index.html">
+        <section class="post">
+            <h2>nousDECOR uses ParseHub to find beautiful interior decor</h2>
+            <p>If you have a young professional as a friend, and casually stop by their new apartment, chances are you&hellip;</p>
+        </section>
+    </a>
+    <a class="read-next-story prev no-cover" href="../why-working-remotely-is-the-best-choice-for-our-start-up/index.html">
+        <section class="post">
+            <h2>Why working remotely is the best choice for our start-up</h2>
+            <p>When an internal memo from Yahoo! leaked banning work from home, an uproar from remote-work supporter unleashed a heated&hellip;</p>
+        </section>
+    </a>
+</aside>
+
+
+          </div>
+          <div class="col-md-3">
+            <div class="feature-widget">
+              <a href="../../quickstart.html">
+              <img src="../../static/images/parsehub_logo2.svg" class="img-responsive"/></a>
+            </div>
+            <div class="most_popular_widget">
+              <h4>Most popular:</h4>
+                <ol>
+                  <li>
+                    <a href="../get-10-000-quality-sales-leads-in-15-minutes/index.html">Get 10,000 sales leads in 15 minutes</a>
+                  </li>
+                  <li>
+                    <a href="../compare-product-prices-on-amazon-with-web-scraping/index.html">Compare product prices on Amazon</a>
+                  </li>
+                  <li>
+                    <a href="../cost-of-living-in-and-visiting-the-best-26-startup-cities/index.html">Cost of living in 26  start-up cities</a>
+                  </li>
+                  <li>
+                    <a href="../use-tableau-to-visualize-data-scraped-by-parsehub/index.html">Use Tableau to visualize scraped data</a>
+                  </li>
+                  <li>
+                    <a href="../introducing-a-new-version-of-parsehub/index.html">Introducing the new version of ParseHub</a>
+                  </li>
+                </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ph-footer">
+  <div class="row">
+    <div class="col-lg-2 col-md-3 col-sm-3 ph-footer-col">
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 ph-footer-col">
+      <h6>COMPANY</h6>
+      <p><a href="../../intro.html">About</a></p>
+      <p><a href="../index.html">Blog</a></p>
+      <p><a href="https://twitter.com/parsehub">Twitter</a></p>
+      <p><a href="../../contact.html">Contact</a></p>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 ph-footer-col">
+      <h6>PRODUCT</h6>
+      <p><a href="../../quickstart.html">Download</a></p>
+      <p><a href="../../features.html">Features</a></p>
+      <p><a href="../../pricing.html">Pricing</a></p>
+      <p><a href="https://calendly.com/parsehub-product-demo">Schedule a Demo</a></p>
+      <p><a href="../../terms.html">Terms</a></p>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 ph-footer-col">
+      <h6>HELP</h6>
+      <p><a href="../../docs/ref/api/v2/index.html">API Docs</a></p>
+      <p><a href="https://help.parsehub.com/">Tutorials</a></p>
+      <p><a href="https://help.parsehub.com/hc/en-us/categories/202725858-Videos">Videos</a></p>
+      <p><a href="https://help.parsehub.com/hc/en-us/sections/203974597-FAQ">FAQ</a></p>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 ph-footer-col">
+      <h6>CONNECT</h6>
+      <p><a href="https://twitter.com/parsehub" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></p>
+      <p><a href="https://www.linkedin.com/company/parsehub" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a></p>
+      <p><a href="https://plus.google.com/110491495169882588349/about/p/pub" target="_blank"><i class="fa fa-google-plus"></i> Google Plus</a></p>
+      <p><a href="https://www.youtube.com/channel/UCRfbcJQu9HZvc7uks2wmGzw" target="_blank"><i class="fa
+      fa-youtube"></i> YouTube</a></p>
+      <p><a href="../../contact.html" target="_blank"><i class="fa fa-envelope"></i>  Email us</a></p>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-3 ph-col-xs-1 footer-col">
+    </div>
+  </div>
+  <div class="row text-center">
+    <p class="footer-copyright"><a class="muted credit">&copy; 2015-2017 Parsehub.com</a></p>
+  </div>
+</div>
+    <script type="text/javascript" src="../../../code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+    <script type="text/javascript" src="../assets/js/jquery.fitvids164c.js?v=7e189249f9"></script>
+    <script type="text/javascript" src="../assets/js/index164c.js?v=7e189249f9"></script>
+    <script type="text/javascript" src="../assets/js/bootstrap.min164c.js?v=7e189249f9"></script>
+
+</body>
+
+<!-- Mirrored from www.parsehub.com/blog/boost-your-content-marketing-with-web-scraping-and-pivot-tables/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 Mar 2019 02:25:14 GMT -->
+</html>
